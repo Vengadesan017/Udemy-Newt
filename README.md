@@ -9,13 +9,15 @@
    - Stack memory
       - stack memory for each method
       - for main
+|     |     |
 | obj | 101 |
 |  b  |  20 |
 |  a  | 10  |
       - for add
-        |     |     |
-        |  y  |  20 |
-        |  x  | 10  |
+      
+  |     |     |
+  |  y  |  20 |
+  |  x  | 10  |
      
    - Heap memory
      - store the instance memory ( class varianble)
@@ -26,8 +28,3 @@
 |----------|
 | add() |
 
-   | Month | 
-   | -------- | 
-   | January |
-   | February | 
-   | March |
