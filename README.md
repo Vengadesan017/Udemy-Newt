@@ -9,10 +9,10 @@
    - Stack memory
       - stack memory for each method
       - for main
-        |     |     |
-        | obj | 101 |
-        |  b  |  20 |
-        |  a  | 10  |
+|     |     |
+| obj | 101 |
+|  b  |  20 |
+|  a  | 10  |
       - for add
         |     |     |
         |  y  |  20 |
