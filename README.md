@@ -20,7 +20,8 @@
    - Heap memory
      - store the instance memory ( class varianble)
      - store also the object
-| num = 5  |   ===> 101 is address of heap which is stored in main stack
+     -  101 is address this heap which is stored in main stack
+| num = 5  | 
 |----------|
 |  add()   |
 
