@@ -24,7 +24,7 @@
      - store also the object
      -  101 is address this heap which is stored in main stack
      
-| num = 5 | 
+| num = 5 | -- class variable
 |----------|
 | add() |
 
