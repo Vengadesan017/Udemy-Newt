@@ -13,18 +13,20 @@
 | obj | 101 |
 |  b  |  20 |
 |  a  | 10  |
+
       - for add
       
-  |     |     |
-  |  y  |  20 |
-  |  x  | 10  |
+|     |     |
+|  y  |  20 |
+|  x  | 10  |
      
    - Heap memory
      - store the instance memory ( class varianble)
      - store also the object
      -  101 is address this heap which is stored in main stack
-     
-| num = 5 | -- class variable
+     -  num is class variable\
+       
+| num = 5 | 
 |----------|
 | add() |
 
