@@ -25,8 +25,8 @@
 |----------|
 |  add()   |
 
-| Month | Savings |
-| -------- | ------- |
-| January | $250 |
-| February | $80 |
-| March | $420 |
+   | Month | Savings |
+   | -------- | ------- |
+   | January | $250 |
+   | February | $80 |
+   | March | $420 |
