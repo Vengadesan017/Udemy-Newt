@@ -61,5 +61,23 @@
     - String str = "12";
     - int num4 = integer.parseInt(str);
     - sout(num4*4);
+
+# Advance java
+1. Abstract method
+   - declare the method but not the logic, later done the logic
+2. inner class
+   - nested class
+   - create obj like A.B obj = new B();
+3. Anonymous inner cls
+   ```
+      A obj = new A(){
+         public void show(){
+            sout(" In new show ");
+         }
+      }
+      obj.show();
       
-    
+   ```
+4. Annotation
+   - @override to override and indicate in dup method
+   - 
