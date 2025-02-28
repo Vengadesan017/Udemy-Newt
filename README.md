@@ -31,4 +31,5 @@
 | add() |
 
 8. import java.lang.*  // default and system from the paackage
-9. package com.google.package  -- is reverse of domain google.com to make the package globally unique avoid collision 
+9. package com.google.package  -- is reverse of domain google.com to make the package globally unique avoid collision
+10. in com.google the com is parent dir and google is sub parent dir
