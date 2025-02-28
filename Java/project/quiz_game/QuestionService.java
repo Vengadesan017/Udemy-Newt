@@ -26,8 +26,8 @@ public class QuestionService {
             System.out.println(q.getOpt2());
             System.out.println(q.getOpt3());
             System.out.println(q.getOpt4());
-            Scanner sc = new Scanner(System.in);
-            selection[i] = sc.nextLine();
+            Scanner ans = new Scanner(System.in);
+            selection[i] = ans.nextLine();
             i++;
 
         }
