@@ -61,5 +61,57 @@
     - String str = "12";
     - int num4 = integer.parseInt(str);
     - sout(num4*4);
-      
-    
+
+# Advance Java
+0. Abstract
+   - declare function but define later when need
+   - obj is not createble for abstract class need to inherit
+2. inner class
+   - nested class A > B
+   - create obj like A.B obj = new B();
+3. Anonymous inner class
+   - no declaration only define
+     ```
+     A obj = new A(){
+      public void show(){
+         sout("in show");
+      }
+     }
+     obj.show();   -- obj is obj of anonymous cls
+4. interface
+   - all methods are public abstract method by default
+   - use implements instead of extends  ( implement only the methods)
+   - interface variable are final and static
+   - usage
+     - class - class -> extends
+     - class - interface -> Implements
+     - interface - interface -> extends
+   - needs
+     - when same method with differnt logic for different class is need then create interface wit abstract method and override in your classes
+     - like code abs method in computer interface then override the code method in laptop desktop mobile class.
+   - Types
+     - normal - contain two or more method
+     - functional ( sam - single abstract method) single method
+     - marker - no methods - used as serializer
+       - serialization - save the data(a=123,b=1212) from heap to disk when the game closed gp to km
+       - deserialization - load the data(a=123,b=1212) from dist to heap when the game reopen kb to gp
+l5. Enums
+   ```
+      enum Nums{   --- act like class nit able to extends   
+   	one, Two, Three;     --- act like object but is is also a named constand
+      }
+
+   	Nums s= Nums.Two;
+   	System.out.println(s);    // constand variable value
+   	System.out.println(s.ordinal());   // index value
+    	
+    	Nums[] ss=Nums.values();
+    	System.out.println(ss);
+    	
+    	for(Nums e:ss)
+    	{
+    		System.out.println(e+" : "+e.ordinal());
+    	}
+   ```
+6. Annotation
+   - meta data about the programm like @ override
