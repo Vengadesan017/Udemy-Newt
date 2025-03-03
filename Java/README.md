@@ -95,7 +95,24 @@
      - marker - no methods - used as serializer
        - serialization - save the data(a=123,b=1212) from heap to disk when the game closed gp to km
        - deserialization - load the data(a=123,b=1212) from dist to heap when the game reopen kb to gp
-l5. Enums
+     - Functional interface - only one method
+       ```
+       @FunctionalInterface
+       interface A{
+          void show();
+       }
+       class B implements A{    --instead of creating obj to B and implements A create Anonymous class 
+         p v show(){...}
+       }
+       main{
+        A obj = new A()
+       {
+            public void show(){
+               sout();
+            }
+       };obj.show()
+       ```
+5. Enums
    ```
       enum Nums{   --- act like class nit able to extends   
    	one, Two, Three;     --- act like object but is is also a named constand
@@ -115,3 +132,310 @@ l5. Enums
    ```
 6. Annotation
    - meta data about the programm like @ override
+7. Functional interface - only one method
+ ```
+ @FunctionalInterface
+ interface A{
+    void show();
+ }
+ class B implements A{    --instead of creating obj to B and implements A create Anonymous class 
+   p v show(){...}
+ }
+ main{
+  A obj = new A()
+ {
+      public void show(){
+         sout();
+      }
+ };obj.show();
+ ```
+8. Lamda Expression
+   - in Functional interface in anonymous class implement shorthands
+```
+ main{
+  A obj = () -> {
+         sout();
+ };obj.show();
+
+ main{
+  A obj = () -> sout();
+  obj.show();
+-- parameter
+ main{
+  A obj = (int i) -> sout(i);
+  obj.show(5);
+-- return
+ main{
+  A obj = (int i) -> i*10;
+  obj.show();
+```
+9. Exceptions
+    - Compile time error (checked)
+    - runtime error (unchecked)
+    - logical error
+    - states
+      - normal state i = 10;
+      - critical state j = 50/i;
+    - hierarchy
+      - Object
+        - Throwable ( interface) most of interface end with ..able
+          - error
+            - I.O error
+            - thread death
+            - out of memory
+            - virtual machine
+          - Exception
+            - runtimeexception ( unchecked)
+               - arithematic
+               - nullpointer            
+            - SQL Exception (Checked)  must to handly - it your job to handle the exception
+               - IO exception 
+    - keywords
+      - try - throw the error
+      - catch - catch the error which is throwen by try bloc
+      - throw - manually throw the error/exception 
+      - throw - manually throw the error/exception your own exception too
+      - throws 
+        - not like in try block you just mention the exception in function whos call the code whhich contain the checked error.
+        - instean of running code inside the try you forward the responsibelity to upper function
+        - public void show() throws ClassNotFoundException
+      - Finally  it is default block , which run always if error occured or not. mostly used to close the obj od io files resouce
+
+10. input and Bufferedreader and scanner
+   - system.in.read() - used to read the int but one char and return as ascii code and also handle checked error
+   - BufferReader but it need InputStreamReader obj but it need System.in obj, can also use without catch block to close the resource
+     ```
+    	InputStreamReader in=new InputStreamReader(System.in);
+    	BufferedReader bf=new BufferedReader(in);
+    	
+    	int num=Integer.parseInt(bf.readLine());
+    	System.out.println(num);
+      bf.close();   best pratice to close
+     ```
+   - Scanner nee System.in object
+     ```
+    	Scanner sc=new Scanner(System.in);
+    	int num=sc.nextInt();
+    	System.out.println(num);
+     ```
+
+11. try with resources
+   ```
+      -- manual close
+      BufferedReader bf = null
+      try{
+    	BufferedReader bf=new BufferedReader(InputStreamReader(System.in));
+    	
+    	int num=Integer.parseInt(bf.readLine());
+    	System.out.println(num);
+         }
+         finally{
+            bf.close();
+         }
+      -- Auto close
+      try(BufferedReader bf=new BufferedReader(InputStreamReader(System.in));){
+    	BufferedReader bf=new BufferedReader(InputStreamReader(System.in));
+    	
+    	int num=Integer.parseInt(bf.readLine());
+    	System.out.println(num);
+         }
+   ```
+12. threads
+    - each process had multiple thread
+    - each process had multiple thread
+    - extend thread class or implement runnable interface
+    ```
+      class A extend Thread{
+          public void run(){for}}
+      class B extend Thread{
+          public void run(){for}}
+      class C{
+          A obj.start()
+          B obj.start()   Randomly run the both function   
+      
+    ```
+13. Thread priority sleep
+```
+      class A extends Thread
+      {
+      	public void run()
+      	{
+      		for(int i=1;i<=100;i++)
+      		{
+      			System.out.println("Hi");
+      			try {
+      				Thread.sleep(10);
+      			}catch(InterruptedException e) {
+      				e.printStackTrace();
+      			}
+      		}
+      	}
+      }
+
+
+      class B extends Thread
+      {
+      	public void run()
+      	{
+      		for(int i=1;i<=100;i++)
+      		{
+      			System.out.println("Hello");
+      			try {
+      				Thread.sleep(10);
+      			}catch(InterruptedException e) {
+      				e.printStackTrace();
+      			}
+      		}
+      	}
+      }
+
+public class Demo {
+    public static void main(String[] args) throws NumberFormatException {   
+    	
+    	A obj1=new A();
+    	B obj2=new B();
+    	
+    	obj2.setPriority(Thread.MAX_PRIORITY);   // min max normal
+    	System.out.println(obj1.getPriority());
+    	
+    	obj1.start();
+    	try {
+			Thread.sleep(2);
+		}catch(InterruptedException e) {
+			e.printStackTrace();
+		}
+    	obj2.start();
+    }
+    
+}
+```
+14. Runnable 
+```
+      class A implements Runnable{
+          public void run(){for}}
+      class B implements Runnable{
+          public void run(){for}}
+      class C{
+    	Runnable obj1=new A();
+    	Runnable obj2=new B();
+
+    	Thread t1=new Thread(obj1);
+    	Thread t2=new Thread(obj2);
+ ```
+15. Lambda Expression
+```
+ 	-- anonymous
+	//      class A implements Runnable{
+	//          public void run(){for}}
+      class B implements Runnable{
+          public void run(){for}}
+      class C{
+    	Runnable obj1=new A();
+    	Runnable obj2=new B();
+
+    	Thread t1=new Runnable(){
+    		 public void run(){for}
+       };	
+    	Thread t2=new Thread(obj2);
+
+     
+	//      class A implements Runnable{
+	//          public void run(){for}}
+	//      class B implements Runnable{
+	//          public void run(){for}}
+      class C{
+    	Runnable obj1=new A();
+    	Runnable obj2=new B();
+
+    	Thread t1=() -> {
+    		 public void run(){for}
+       };	
+    	Thread t2=() -> {
+    		 public void run(){for}
+       };
+  ```
+16. Race condition
+    - 2 threads use same resouce for read and write
+    - so use obj.join() to wait for execute the both thread and then execute the main
+    - then use synchronized in resource to avoid the race condition
+
+17. Tread states
+    - new  
+    - runnable  - when start() is call (new to runnable)
+    - running   - run()
+    - waiting   - sleep(),wait() ( running to waiting) , notify() ( waiting to runnable )
+    - dead       - stop()   (running,runnable to dead)
+    
+          
+18. Collection *
+    - to store multiple value in dissimilar datatype
+    - object type and generic type
+    - collection(interface)
+      - List
+         - Arraylist *
+         - LinkedList
+      - Queue
+         - Dequeue        
+      - Set ( no duilicates )
+         - Hashset *
+         - Linked Hashset
+    - Sorting
+      - buildin
+        ```
+		Collections.sort(nums);
+		System.out.println(nums);
+        ```
+      - Comparator
+        ```
+    	Comparator<Integer> com=new Comparator<Integer>()   // our logic for sorting
+    	{
+    		public int compare(Integer i,Integer j)
+    		{
+    			if(i%10 >j%10)
+    				return 1;
+    			else
+    				return -1;
+    		}
+    	};
+		Collections.sort(nums,com);   it sent 2 2 vaules 
+		System.out.println(nums);        
+        ```
+      - Comparable - implement comparable interface for our class objects to sort in custom logic      
+19. iterating
+```
+
+    	List<Integer> nums= Arrays.asList(4,5,7,3,2,6);
+	nums.forEach(n -> System.out.println(n));
+	-- or
+    	for(int i=0;i<nums.size();i++)
+    	{
+    		System.out.println(nums.get(i));
+    	}
+	 -- or 
+    	for(int n: nums)
+    	{
+    		System.out.println(n);
+    	}
+    	System.out.println(nums);
+	-- or
+    	nums.forEach(n -> System.out.println(n));
+    	
+    	
+    	int sum=0;
+    	for(int n:nums)
+    	{
+    		if(n%2==0)
+    		{
+    			n=n*2;
+    			sum=sum+n;
+    		}
+    	}
+    	
+    	System.out.println(sum);
+  
+```
+20. Stream API
+    - iterate only once
+
+           
+           
