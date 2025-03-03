@@ -95,7 +95,24 @@
      - marker - no methods - used as serializer
        - serialization - save the data(a=123,b=1212) from heap to disk when the game closed gp to km
        - deserialization - load the data(a=123,b=1212) from dist to heap when the game reopen kb to gp
-l5. Enums
+     - Functional interface - only one method
+       ```
+       @FunctionalInterface
+       interface A{
+          void show();
+       }
+       class B implements A{    --instead of creating obj to B and implements A create Anonymous class 
+         p v show(){...}
+       }
+       main{
+        A obj = new A()
+       {
+            public void show(){
+               sout();
+            }
+       };obj.show()
+       ```
+5. Enums
    ```
       enum Nums{   --- act like class nit able to extends   
    	one, Two, Three;     --- act like object but is is also a named constand
@@ -115,3 +132,47 @@ l5. Enums
    ```
 6. Annotation
    - meta data about the programm like @ override
+7. Functional interface - only one method
+ ```
+ @FunctionalInterface
+ interface A{
+    void show();
+ }
+ class B implements A{    --instead of creating obj to B and implements A create Anonymous class 
+   p v show(){...}
+ }
+ main{
+  A obj = new A()
+ {
+      public void show(){
+         sout();
+      }
+ };obj.show();
+ ```
+8. Lamda Expression
+   - in Functional interface in anonymous class implement shorthands
+```
+ main{
+  A obj = () -> {
+         sout();
+ };obj.show();
+
+ main{
+  A obj = () -> sout();
+  obj.show();
+-- parameter
+ main{
+  A obj = (int i) -> sout(i);
+  obj.show(5);
+-- return
+ main{
+  A obj = (int i) -> i*10;
+  obj.show();
+```
+9. Exceptions
+    - Compile time error (checked)
+    - runtime error (unchecked)
+    - logical error
+    - states
+      - normal state i = 10;
+      - critical state j = 50/i;
