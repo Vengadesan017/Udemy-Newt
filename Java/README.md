@@ -176,3 +176,150 @@
     - states
       - normal state i = 10;
       - critical state j = 50/i;
+    - hierarchy
+      - Object
+        - Throwable ( interface) most of interface end with ..able
+          - error
+            - I.O error
+            - thread death
+            - out of memory
+            - virtual machine
+          - Exception
+            - runtimeexception ( unchecked)
+               - arithematic
+               - nullpointer            
+            - SQL Exception (Checked)  must to handly - it your job to handle the exception
+               - IO exception 
+    - keywords
+      - try - throw the error
+      - catch - catch the error which is throwen by try bloc
+      - throw - manually throw the error/exception 
+      - throw - manually throw the error/exception your own exception too
+      - throws 
+        - not like in try block you just mention the exception in function whos call the code whhich contain the checked error.
+        - instean of running code inside the try you forward the responsibelity to upper function
+        - public void show() throws ClassNotFoundException
+      - Finally  it is default block , which run always if error occured or not. mostly used to close the obj od io files resouce
+
+10. input and Bufferedreader and scanner
+   - system.in.read() - used to read the int but one char and return as ascii code and also handle checked error
+   - BufferReader but it need InputStreamReader obj but it need System.in obj, can also use without catch block to close the resource
+     ```
+    	InputStreamReader in=new InputStreamReader(System.in);
+    	BufferedReader bf=new BufferedReader(in);
+    	
+    	int num=Integer.parseInt(bf.readLine());
+    	System.out.println(num);
+      bf.close();   best pratice to close
+     ```
+   - Scanner nee System.in object
+     ```
+    	Scanner sc=new Scanner(System.in);
+    	int num=sc.nextInt();
+    	System.out.println(num);
+     ```
+
+11. try with resources
+   ```
+      -- manual close
+      BufferedReader bf = null
+      try{
+    	BufferedReader bf=new BufferedReader(InputStreamReader(System.in));
+    	
+    	int num=Integer.parseInt(bf.readLine());
+    	System.out.println(num);
+         }
+         finally{
+            bf.close();
+         }
+      -- Auto close
+      try(BufferedReader bf=new BufferedReader(InputStreamReader(System.in));){
+    	BufferedReader bf=new BufferedReader(InputStreamReader(System.in));
+    	
+    	int num=Integer.parseInt(bf.readLine());
+    	System.out.println(num);
+         }
+   ```
+12. threads
+    - each process had multiple thread
+    - each process had multiple thread
+    - extend thread class or implement runnable interface
+    ```
+      class A extend Thread{
+          public void run(){for}}
+      class B extend Thread{
+          public void run(){for}}
+      class C{
+          A obj.start()
+          B obj.start()   Randomly run the both function   
+      
+    ```
+13. Thread priority sleep
+```
+      class A extends Thread
+      {
+      	public void run()
+      	{
+      		for(int i=1;i<=100;i++)
+      		{
+      			System.out.println("Hi");
+      			try {
+      				Thread.sleep(10);
+      			}catch(InterruptedException e) {
+      				e.printStackTrace();
+      			}
+      		}
+      	}
+      }
+
+
+      class B extends Thread
+      {
+      	public void run()
+      	{
+      		for(int i=1;i<=100;i++)
+      		{
+      			System.out.println("Hello");
+      			try {
+      				Thread.sleep(10);
+      			}catch(InterruptedException e) {
+      				e.printStackTrace();
+      			}
+      		}
+      	}
+      }
+
+public class Demo {
+    public static void main(String[] args) throws NumberFormatException {   
+    	
+    	A obj1=new A();
+    	B obj2=new B();
+    	
+    	obj2.setPriority(Thread.MAX_PRIORITY);   // min max normal
+    	System.out.println(obj1.getPriority());
+    	
+    	obj1.start();
+    	try {
+			Thread.sleep(2);
+		}catch(InterruptedException e) {
+			e.printStackTrace();
+		}
+    	obj2.start();
+    }
+    
+}
+```
+14. Lambda Expression
+   ```
+      class A implements Runnable{
+          public void run(){for}}
+      class B implements Runnable{
+          public void run(){for}}
+      class C{
+    	Runnable obj1=new A();
+    	Runnable obj2=new B();
+
+    	Thread t1=new Thread(obj1);
+    	Thread t2=new Thread(obj2);
+    ```
+          
