@@ -309,8 +309,8 @@ public class Demo {
     
 }
 ```
-14. Lambda Expression
-   ```
+14. Runnable 
+```
       class A implements Runnable{
           public void run(){for}}
       class B implements Runnable{
@@ -321,5 +321,121 @@ public class Demo {
 
     	Thread t1=new Thread(obj1);
     	Thread t2=new Thread(obj2);
-    ```
+ ```
+15. Lambda Expression
+```
+ 	-- anonymous
+	//      class A implements Runnable{
+	//          public void run(){for}}
+      class B implements Runnable{
+          public void run(){for}}
+      class C{
+    	Runnable obj1=new A();
+    	Runnable obj2=new B();
+
+    	Thread t1=new Runnable(){
+    		 public void run(){for}
+       };	
+    	Thread t2=new Thread(obj2);
+
+     
+	//      class A implements Runnable{
+	//          public void run(){for}}
+	//      class B implements Runnable{
+	//          public void run(){for}}
+      class C{
+    	Runnable obj1=new A();
+    	Runnable obj2=new B();
+
+    	Thread t1=() -> {
+    		 public void run(){for}
+       };	
+    	Thread t2=() -> {
+    		 public void run(){for}
+       };
+  ```
+16. Race condition
+    - 2 threads use same resouce for read and write
+    - so use obj.join() to wait for execute the both thread and then execute the main
+    - then use synchronized in resource to avoid the race condition
+
+17. Tread states
+    - new  
+    - runnable  - when start() is call (new to runnable)
+    - running   - run()
+    - waiting   - sleep(),wait() ( running to waiting) , notify() ( waiting to runnable )
+    - dead       - stop()   (running,runnable to dead)
+    
           
+18. Collection *
+    - to store multiple value in dissimilar datatype
+    - object type and generic type
+    - collection(interface)
+      - List
+         - Arraylist *
+         - LinkedList
+      - Queue
+         - Dequeue        
+      - Set ( no duilicates )
+         - Hashset *
+         - Linked Hashset
+    - Sorting
+      - buildin
+        ```
+		Collections.sort(nums);
+		System.out.println(nums);
+        ```
+      - Comparator
+        ```
+    	Comparator<Integer> com=new Comparator<Integer>()   // our logic for sorting
+    	{
+    		public int compare(Integer i,Integer j)
+    		{
+    			if(i%10 >j%10)
+    				return 1;
+    			else
+    				return -1;
+    		}
+    	};
+		Collections.sort(nums,com);   it sent 2 2 vaules 
+		System.out.println(nums);        
+        ```
+      - Comparable - implement comparable interface for our class objects to sort in custom logic      
+19. iterating
+```
+
+    	List<Integer> nums= Arrays.asList(4,5,7,3,2,6);
+	nums.forEach(n -> System.out.println(n));
+	-- or
+    	for(int i=0;i<nums.size();i++)
+    	{
+    		System.out.println(nums.get(i));
+    	}
+	 -- or 
+    	for(int n: nums)
+    	{
+    		System.out.println(n);
+    	}
+    	System.out.println(nums);
+	-- or
+    	nums.forEach(n -> System.out.println(n));
+    	
+    	
+    	int sum=0;
+    	for(int n:nums)
+    	{
+    		if(n%2==0)
+    		{
+    			n=n*2;
+    			sum=sum+n;
+    		}
+    	}
+    	
+    	System.out.println(sum);
+  
+```
+20. Stream API
+    - iterate only once
+
+           
+           
