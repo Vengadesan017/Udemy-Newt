@@ -497,3 +497,5 @@ public class Demo {
 		.toList();
 	names.forEach(System.out::println);
 ```
+23. Constructor reference
+    passing the contructor like function in 
