@@ -435,7 +435,67 @@ public class Demo {
   
 ```
 20. Stream API
-    - iterate only once
+    - stream api obj will iterate only once
+    - but it offers multiple function like filter(if),reduce(sum),map(like as js)
+```
+    	List<Integer> nums=Arrays.asList(4,5,7,3,2,6);
+    	
+    	Stream<Integer> s1=nums.stream();
+    	Stream<Integer> s2= s1.filter(n ->n%2==0);
+    	Stream<Integer> s3= s2.map(n->n*2);
+    	int result=s3.reduce(0,(c,e)->c+e);
+	-- shorthandes
+	int result=nums.stream()
+			.filter(n-> n%2==0)
+			.map(n->n*2)
+			.reduce(0, (c,e)-> c+e)
+			.sorted;    0 is initial value, c is carry ,e is element 
 
+	-- predicate used to run custom logic and return the boolean to filter
+    	Predicate<Integer> p= new Predicate<Integer>() {
+    		public boolean test(Integer n) {
+    			return n%2==0;
+    			if(n%2==0)
+    				return true;
+    			else
+    				return false;
+    		}
+    	};
+    	-- or
+    	Predicate<Integer> p= n-> n%2==0;
+    	Stream<Integer> s2= s1.filter(n ->n%2==0);
+
+	-- parallel stream
+	for multiple threads  it takes time because it create a new thread but sill fastter then normal method but on H/W
+	int result=nums.parallelStreamstream()
+		.filter(n-> n%2==0)
+		.map(n->n*2)
+		.reduce(0, (c,e)-> c+e)
+		.sorted;
+	to check compare the start ena end time for stream and paralell stream
+	long startPara = system.currentTimeMillis();
+	long endPara = system.currentTimeMillis();  and computer the sub
+```
            
-           
+21. Optional Class
+    - in stream filter is no data found the null pointer error is occur
+    - use Optional class in stream definition
+```
+    	List<String> names=Arrays.asList("dfsd","john", "Segar");
+    	Optional<String> names = names.stream();
+                                     .filter(ss -> ss.contains("x"))
+  				     .findFirst();
+	sout(name.orElse("Not found"));
+			
+```
+22. Method reference
+    - passing a method in map method
+```
+    	List<String> names=Arrays.asList("dfsd","john", "Segar");
+	List<String> upName = names.Stream()
+		.map(String::toUpperCase)
+		.toList();
+	names.forEach(System.out::println);
+```
+23. Constructor reference
+    passing the contructor like function in 
