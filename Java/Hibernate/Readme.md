@@ -1,0 +1,21 @@
+# Hibarnate
+- ORM Framework - Object-Relational Mapping
+- increase productivity
+- create class for table as blue print and create obj and access the table
+- basically bibernate use jdbc to in behind the scenes
+## steps
+- Add dependencies
+- create class in package with private attribute and getter and setter and toString
+- then create obj for clss and store values
+- Mainly then create session factor to open the session
+- before this create configuration obj use this for session factory and this obj for opensession
+- then finally save the session with obj which is created for blue print class
+- -- it show the error for not connect to jdbc
+- so create hibernate.cfg.xml file and in this create session factory with db criver , url, username , password
+- then define @Entity in that blue print class
+- then call the configuration with addAnnotatachClass(com.venagt.BluePrient.class)
+- in Blueprint class mention @id for id attribute
+- then commit the transaction before saving
+- finally in hibernate.cfg.xml file mention suto create update delete the models
+- to view configuration in hiber..xml file add poperty like show_sql and format_sql as true
+- optional to mention the db type in hibernate file as property
