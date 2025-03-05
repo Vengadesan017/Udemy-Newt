@@ -19,3 +19,130 @@
 - finally in hibernate.cfg.xml file mention suto create update delete the models
 - to view configuration in hiber..xml file add poperty like show_sql and format_sql as true
 - optional to mention the db type in hibernate file as property
+- the save method show wraning to use persist instead of save and also close the session
+
+### Summary
+1. In pom.xml
+   - Add dependencies like hibernate, postgre sql
+    ```
+      <?xml version="1.0" encoding="UTF-8"?>
+      <project xmlns="http://maven.apache.org/POM/4.0.0"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+          <modelVersion>4.0.0</modelVersion>
+      
+          <groupId>com.vengat</groupId>
+          <artifactId>javaHibernate</artifactId>
+          <version>1.0-SNAPSHOT</version>
+      
+          <properties>
+              <maven.compiler.source>23</maven.compiler.source>
+              <maven.compiler.target>23</maven.compiler.target>
+              <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+          </properties>
+          <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+      
+      
+          <dependencies>
+          <dependency>
+              <groupId>org.postgresql</groupId>
+              <artifactId>postgresql</artifactId>
+              <version>42.7.3</version>
+          </dependency>
+          <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
+          <dependency>
+              <groupId>org.hibernate.orm</groupId>
+              <artifactId>hibernate-core</artifactId>
+              <version>6.6.3.Final</version>
+          </dependency>
+      </dependencies>
+      </project>
+    ```
+2. In hibernate.cfg.xml in resources dir
+   - Add Session-factory  and also add database type like dialect , auto create auto up
+   ```
+    <hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+        <session-factory>
+            <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+            <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/java_spring</property>
+            <property name="hibernate.connection.username">postgres</property>
+            <property name="hibernate.connection.password">123456</property>
+    
+            <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+            <property name="hibernate.hbm2ddl.auto">update</property>
+            <property name="hibernate.show_sql">true</property>
+            <property name="hibernate.format_sql">true</property>
+    
+        </session-factory>
+    </hibernate-configuration>
+   
+   ```
+3. Create entity class with getter setter tostring id
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.telusko</groupId>
+    <artifactId>HibProj</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>23</maven.compiler.source>
+        <maven.compiler.target>23</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+
+
+    <dependencies>
+    <dependency>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <version>42.7.3</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
+    <dependency>
+        <groupId>org.hibernate.orm</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>6.6.3.Final</version>
+    </dependency>
+</dependencies>
+</project>
+
+```
+4. In main class
+   - create obj for stdent class
+   - create SessionFactory
+   - create session
+   - create Transaction
+   - save (persist) session with that object
+   - commit Transaction
+   - close session
+   - close session Factory
+```
+        s1.setRollNo(106);
+        s1.setsName("Avni");
+        s1.setsAge(21);
+
+
+        SessionFactory sf = new Configuration()
+                .configure()
+                .addAnnotatedClass(com.telusko.Student.class)
+                .buildSessionFactory();
+
+        Session session = sf.openSession();
+        Transaction transaction = session.beginTransaction();
+
+        session.persist(s1);
+
+
+        transaction.commit();
+        session.close();
+        sf.close();
+        System.out.println(s1);
+
+```
+## Fetching data
