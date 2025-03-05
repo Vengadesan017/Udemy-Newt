@@ -160,3 +160,13 @@ public class Student {
 
 ```
 ## Fetching data
+## Update 
+## delete
+## rename
+## embeddable - like extending the table
+- one to one
+- one to many -- use thired table
+- many to many -- use thired table
+
+## Eagar Fetching and lazy Fetching
+
