@@ -79,39 +79,53 @@
    ```
 3. Create entity class with getter setter tostring id
 ```
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+package com.vengat;
 
-    <groupId>com.telusko</groupId>
-    <artifactId>HibProj</artifactId>
-    <version>1.0-SNAPSHOT</version>
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
-    <properties>
-        <maven.compiler.source>23</maven.compiler.source>
-        <maven.compiler.target>23</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-    <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+@Entity
+public class Student {
+@Id
+    private int rollNo;
+    private String sName;
+    private int sAge;
+
+    public int getsAge() {
+        return sAge;
+    }
+
+    public void setsAge(int sAge) {
+        this.sAge = sAge;
+    }
+
+    public String getsName() {
+        return sName;
+    }
+
+    public void setsName(String sName) {
+        this.sName = sName;
+    }
+
+    public int getRollNo() {
+        return rollNo;
+    }
+
+    public void setRollNo(int rollNo) {
+        this.rollNo = rollNo;
+    }
 
 
-    <dependencies>
-    <dependency>
-        <groupId>org.postgresql</groupId>
-        <artifactId>postgresql</artifactId>
-        <version>42.7.3</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
-    <dependency>
-        <groupId>org.hibernate.orm</groupId>
-        <artifactId>hibernate-core</artifactId>
-        <version>6.6.3.Final</version>
-    </dependency>
-</dependencies>
-</project>
+    @Override
+    public String toString() {
+        return "Student{" +
+                "rollNo=" + rollNo +
+                ", sName='" + sName + '\'' +
+                ", sAge=" + sAge +
+                '}';
+    }
 
+}
 ```
 4. In main class
    - create obj for stdent class
