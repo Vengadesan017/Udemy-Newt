@@ -1,4 +1,4 @@
-# Mavean
+# Maven
 - project management tool
 - manage jar file (dependency)
 - manage project ( complie > run > test > packaging > deploying)
@@ -18,3 +18,8 @@
           <version>42.7.4</version>
       </dependency>
 ```
+- Maven Archetype -  default templeting
+  - when creating the project choose the maven archetype by choose maven central catalog then choose spring-boot-jersery in archetype
+- work flow
+  - first when you create the dependency it serach locally in m2 folder in documents
+  - if not there then download from network and sove inlocal
