@@ -1,0 +1,16 @@
+# Spring JDBC -H2
+-steps
+  - goto start spring io
+  - create package
+  - add dependancy search JDBC API , H2 database
+  - generate
+  - open project
+  - create layers
+  - create model like student
+  - create service like StudentService
+  - in main create Applicationcontext and ment for obj for student and studentService
+  - Add anotation like @Companent, @Service
+  - create repo folder and class or create obj in service and generate setter and getter and auto wire for setter
+  - add anotation @Repository
+  - Create save func in repo and call in service
+  - create getStudents class in service and call from main with List<Student> type
