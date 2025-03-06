@@ -151,3 +151,24 @@
 12. Lazy init
     - obj is created only when the obj is used
     `       <bean id="com1" class="com.telusko.Aliaan" lazy-init="true"> `
+### Annaotation
+- @SprintGootApplication - manage all the congifuration and start the main by run()
+- @component
+- @Autowire
+- @Values
+- @Quilifier
+- @primary
+- ...
+### Layer
+- in server
+  - Controller ( URL )
+  - service ( business logic )
+  - Repository ( data base through DAO )data access object
+### Service 
+- create service package (folder)
+- inside this create sampleService classs
+- and create a obj in main method Sampleservice service = context.getBean(SampleService.class);service.addSample(sam);
+- Mention the service @Service at top of Class name its like and same as @Component
+### Repository
+- crearte SampleRepository.java in repo folder package
+- inside this create function like save and mention the class as @Repository
