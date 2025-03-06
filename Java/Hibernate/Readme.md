@@ -169,4 +169,17 @@ public class Student {
 - many to many -- use thired table
 
 ## Eagar Fetching and lazy Fetching
+- in embedded table when you use get(Stuened.class,101) it   return from onle student not from laptop - Lazy fetch
+- when you sout the obj it will return all the data from two data
+- to define in @OneTOMany(fetch = FetchType.EAGER)  || .LAZY
+
+## Caching
+- when repeatedly use same seesion is return the value from the cache memory not from db so create neww session obj to refresh
+- we can also conntect to session but need third party tools
+## HQL (Hibernate query Language)
+- read session.find(Student.class,101); pk id
+- delete session.remove(student_onj);
+- create session.persist(student_onj);
+- update session.merge(student_onj);
+- gfetch
 
