@@ -175,11 +175,39 @@ public class Student {
 
 ## Caching
 - when repeatedly use same seesion is return the value from the cache memory not from db so create neww session obj to refresh
-- we can also conntect to session but need third party tools
+- level two cache
+  - we can also conntect two session but need third party tools 
+  1. create dependency for org.ehcache 3.10.8 and also a hibernate-jcache ( it shows error by version so use jax-runtime dependency in dependancy management tag
+  2. mention @Cacheable in below entity
+  3. config hibernate.cfg.xml with use seceond level cache,foctory class, jakarta cachae as properties
+  - 
 ## HQL (Hibernate query Language)
 - read session.find(Student.class,101); pk id
 - delete session.remove(student_onj);
 - create session.persist(student_onj);
 - update session.merge(student_onj);
-- gfetch
-
+- fetch
+   - session.get(Student.class,101);  // with all column
+   - for all rows and all column
+     - Query query = session.createQuery("from Laptop");
+     - List<Laptop> laptop = query.getResultList();
+   - for all rows and all column with where
+     - Query query = session.createQuery("from Laptop where name = 'Ramesh' ");
+     - Query query = session.createQuery("from Laptop where name like 'Ramesh' ");
+     - List<Laptop> laptop = query.getResultList();
+     - 
+     - Query query = session.createQuery("from Laptop where name like ?1 ");
+     - query.setParameter(1,'ramesh');
+     - List<Laptop> laptop = query.getResultList();
+     - 
+     - Query query = session.createQuery("select name from Laptop where name like ?1 ");
+     - query.setParameter(1,'ramesh');
+     - List<String> laptop = query.getResultList();
+     - 
+     - Query query = session.createQuery("select id,name from Laptop where name like ?1 ");
+     - query.setParameter(1,'ramesh');
+     - List<Object[]> laptop = query.getResultList();
+     - for(Object[] data : laptop){}
+## get vs load   
+- get run the query whether the data is used or not
+- in load it run query if you only use the data
