@@ -169,13 +169,67 @@
       
 ## MVC without spring boot
 - addition configuration need
-- steps
+#### steps
   1. download external tomcat and extract
   2. dowload eclipse java ee version
   3. create new maven project with catalog of maven-archetype-webapp
   4. add dependency like sprin mvc
   5. add server in server tabs and download the tomcat
   6. shift the project ro tomcat folder
+  7. in tomcat container there is lot of controller and the front controller manage to request to specific controller like navigation it is called a Dispatcher servlet
+     -  in /webapp/WEB-INFweb.xml file call the dispathcherServlet in / url
+       ```
+		<!DOCTYPE web-app PUBLIC
+		 "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+		 "http://java.sun.com/dtd/web-app_2_3.dtd" >
+		
+		<web-app>
+		  <display-name>Archetype Created Web Application</display-name>
+		  
+		  
+		  
+		 <servlet>
+		 <servlet-name>telusko</servlet-name>
+		 <servlet-class>
+		 org.springframework.web.servlet.DispatcherServlet
+		 </servlet-class>
+		 </servlet>
+		 
+		 <servlet-mapping>
+		  <servlet-name>telusko</servlet-name>
+		  <url-pattern>/</url-pattern>
+		 </servlet-mapping>
+		</web-app>
+       ```
+     -  add library like server runtime
+  8. now 500 error to solve create /webapp/WEB-INF/vengat-serlet.xml ( config dispatcher servlet )
+   ```
+	<?xml version="1.0" encoding="UTF-8"?>
+	<beans xmlns="http://www.springframework.org/schema/beans"
+	       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	       xmlns:ctx="http://www.springframework.org/schema/context"
+	       xmlns:p="http://www.springframework.org/schema/p"
+	       xmlns:mvc="http://www.springframework.org/schema/mvc"
+	       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	                           http://www.springframework.org/schema/beans/spring-beans.xsd
+	                           http://www.springframework.org/schema/context 
+	                           http://www.springframework.org/schema/context/spring-context.xsd
+	                           http://www.springframework.org/schema/mvc
+	                           http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+	  
+	      <ctx:component-scan base-package="com.telusko" />
+	      <ctx:annotation-config/>
+	      
+	      <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	      <property name="prefix" value="/views/"></property>
+	      <property name="suffix" value=".jsp"></property>
+	      </bean>
+	  </beans>
+
   
+   ```
+  8. Now config internal resolver like prefix annd suffix in returning jsp file nin controller
+  9. Create controller
+
 
      
