@@ -15,7 +15,7 @@ public class StudentApplication {
 		ApplicationContext context = SpringApplication.run(StudentApplication.class, args);
 
 		Student stu = context.getBean(Student.class);
-		stu.setId(1001);
+		stu.setId(1004);
 		stu.setName("Ramesh");
 		stu.setMarks(37);
 
@@ -24,6 +24,10 @@ public class StudentApplication {
 		service.addStudent(stu);
 
 		List<Student> s1 = service.getStudents();
+		System.out.println(s1);
+		for(Student temp : s1){
+			System.out.println("data ====> "+temp);
+		}
 	}
 
 }

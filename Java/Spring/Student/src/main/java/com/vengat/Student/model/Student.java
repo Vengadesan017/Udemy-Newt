@@ -3,8 +3,8 @@ package com.vengat.Student.model;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+@Scope("prototype")
 @Component
-//@Scope("prototype")
 public class Student {
     private int id;
     private String name;
