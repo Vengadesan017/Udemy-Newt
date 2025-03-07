@@ -70,10 +70,10 @@
 - view technolagy use JSP to return a html pages (jakarta server pages) embed with java in html
 - MVC ( servlet - controller , jsp - view , object(plain old java object) - model )
 - the jsp it converted into servlet and run in tomcat
-- Create web using spring boot
+#### Create web using spring boot
   1. go start spring io create project the add dependenacy ( spring web  ) generate run
   2. in project run at 8080
-  3. Create view - to create home page create dir like webapp and inside this create index.jsp
+  3. Create view - to create home page create dir like webapp near resources and inside this create index.jsp
     ```
     <%@page language="java" %>
 
@@ -166,11 +166,16 @@
       ```
   11. put css file in webapp folder or static folder in application.properties
   12. use @MOdelAttribute to get data from html and create obj for model with this data
+      
 ## MVC without spring boot
 - addition configuration need
 - steps
   1. download external tomcat and extract
   2. dowload eclipse java ee version
   3. create new maven project with catalog of maven-archetype-webapp
+  4. add dependency like sprin mvc
+  5. add server in server tabs and download the tomcat
+  6. shift the project ro tomcat folder
+  
 
      
