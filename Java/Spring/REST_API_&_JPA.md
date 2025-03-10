@@ -275,3 +275,8 @@ public class JobRestController {
 	
 }
 ```
+
+# Sprin Data JPA - Java Persistence API
+- you can write a code in jpa and then swith to any dm managing tools like hibernate to avoid the recoding the lot of code when you swith to another tools
+- standard Java specification for managing relational data in Java applications
+- facilitating object-relational mapping (ORM) and simplifying database interactions. It allows developers to map Java objects to database tables in a standard
