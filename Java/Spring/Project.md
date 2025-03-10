@@ -95,7 +95,8 @@
   </div>
 
   ```
-- use @PoastMapping("namee") or @GetMapping("namee") or @RequestMapping("namee", POST) for post form submission
+- use @PoastMapping("namee") or @GetMapping("namee") or @RequestMapping("namee", POST) for post form  submission
+- use @ResponseBogy to retuen the data as api call by return service.getAllJobs();
   ```
   @Controller
   public class JobController {
@@ -106,8 +107,8 @@
   
       @GetMapping({"/", "home"})
       public String home() {
-          return "home";
-      }
+          return "home";                // it is a view name    
+      }                                  // use @ResponseBogy to retuen the data as api call by return service.getAllJobs();
   
   
       @GetMapping("addjob")
