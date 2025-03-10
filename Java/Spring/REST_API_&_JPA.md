@@ -45,6 +45,10 @@
       return service.addJob(postId);
     }
     ```
+- Content Negotiation - USE jackson package to convert the list of data into a json are xml are other else
+  - add dependency in pom.xml
+  - then in postman i header add key as Accep and value as application/xml
+  - iin controller to restrict the data output use use path="jobPost", produces =("appication/json"} in @GetMapping()
 ### Repo
 ```
 
