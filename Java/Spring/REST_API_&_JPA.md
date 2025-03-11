@@ -17,6 +17,8 @@
   - json-server --watch db.json --port 8000  // backend is read
   - use axios.get('url'); get the data
   - in backend controler use @CrossOrigin(origins = "http:/localhoast:3000")
+  - npm i // to installl the dependency
+  - npm run dev  // to run the project
 - run FRONTNEND server
   - npm install
   - view package.json in react
@@ -280,3 +282,53 @@ public class JobRestController {
 - you can write a code in jpa and then swith to any dm managing tools like hibernate to avoid the recoding the lot of code when you swith to another tools
 - standard Java specification for managing relational data in Java applications
 - facilitating object-relational mapping (ORM) and simplifying database interactions. It allows developers to map Java objects to database tables in a standard
+### project
+1. create project with spring data dpa , postgreSQL Driver
+2. in application.properties config data base
+  ```
+	spring.datasource.url=jdbc:postgresql://localhost:5432/vengat
+	spring.datasource.username=postgres
+	spring.datasource.password=Lumia@540
+	spring.datasource.driver-class-name=org.postgresql.Driver
+
+
+	spring.jpa.hibernate.ddl-auto=update   // to auto create the table by JPA through the hibernate
+						// the create cmd every time create the table but the update cmd create if not else update the table structure
+
+	spring.jpa.show-sql=true         // it show the query you do not manually show thw query
+
+
+  ```
+3. in main method create the ApplicationContext and create the getBean() 
+4. Create table as repo 
+  - Create the a interface and extends the JpaRepositor and pass <Student, Integer> and mention as @Repository and @Entity,@Id in Student class to mention it as table
+  - this JpaRepositor contains a all curd function like save , update findall findbyid.... and you do not need to create the logic for that manually
+  - repo.findall()  // all rows
+  - repo.findById()  // by id  but you need to handly as Optional(Student> then use .get() or .orElse(new Student())
+  - for select by custom column name use the below code inside your interface
+   ```
+	 @Query("select obj from class_name obj where obj.variable_name = ?1")
+	 List<Student> findByName(String name);
+
+	then use this findByNmae method in main method
+
+ 	-- it is also possible in most cases but not all time
+	 List<Student> findByName(String name);    // start with findByColumn_name
+	 List<Student> findByMarks(int marks);
+	 List<Student> findByMarksGreaterThan(int marks);
+
+	-- use save() to Update the table like .save(s3);
+	-- use delete() to delete the row the table like .delete(s3);
+
+        List<JobPost> findByPostProfileContainingorPostDescContaining(String keyword);
+   ```
+5. Implement with REST api with react
+
+
+
+
+
+
+
+
+
