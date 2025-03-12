@@ -233,3 +233,10 @@
     - with image
       1. send data and image in single json and image as txt file then decode it in server to image
       2. send the data in json and image seperatly
+
+# Spring Rest ( no controller)
+1. add only spring data JPA and REST Reporitory and postgree and lombok
+2. create model and repo package
+3. config db
+4. no need to create the controller it is managed un repository layer
+5. just open localhost:8080:model_class_name and perform get post put delete
