@@ -221,3 +221,15 @@
 5. create repo package
    - inthis create the productRepo interface which implements the JpaRepository<Product , Integer>    -- jpaRepo is typeed pass the type of model with pk type
 6. Load data and run react then add crossOrigin to api controller
+7. Response Entity
+   - in controller to send the data with status code
+   ```
+	public ResponseEntity<List<product>> getProducts(){
+		return new ResponseEntity<>(productService.getAllProducts. HttpStream.Ok);
+   	}
+   ```
+8. Fetch by id
+9. add product
+    - with image
+      1. send data and image in single json and image as txt file then decode it in server to image
+      2. send the data in json and image seperatly
