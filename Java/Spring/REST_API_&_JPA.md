@@ -11,6 +11,19 @@
 - post to create data and also update
 - put to update the data
 - delete
+## Http status code
+- 100 t0 500
+- 200 Succes
+	- 200 ok - succeeded
+	- 201 created - created
+	- 202 Accepted - accepted for processing
+- 400 Client error
+  - 404 not found
+  - 401 unauthorized
+  - 405 method not allowed
+- 500 server erroe
+  - 500 internal server erroe
+  - 502 bad gateway
 ## react UI
 - run fake backend server
   - npm install -g json-server
