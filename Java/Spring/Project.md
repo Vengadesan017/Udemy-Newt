@@ -198,3 +198,15 @@
     ```
   - DTO -Data transfer Object ( repo - service - controller )
   - use model in controller to send data to view
+
+# Spring REST API 
+1. start spring io > spring web , lombok , postgreeSQL driver
+2. create hello world to post man from Controller
+   - create HelloCOntroller.java
+   - mention as @RestController
+     - mention @GetMapping("/hello")
+   - create productController.java  ( move this 2 contoller to controller package )
+   - mention as @RestController and @RequestMapping("/api")
+     - mention @GetMapping("/api/products")
+3. Create model package
+   - inside create product class and mention as @Entity
