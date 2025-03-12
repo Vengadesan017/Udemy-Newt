@@ -208,5 +208,16 @@
    - create productController.java  ( move this 2 contoller to controller package )
    - mention as @RestController and @RequestMapping("/api")
      - mention @GetMapping("/api/products")
+   - chnage the return type fo controller when is need to return the list of rows from db as List<Produc>
 3. Create model package
-   - inside create product class and mention as @Entity
+   - inside create product class and mention as @Entity @Data @NoArgContructor @AllArgsConstructor
+   - add dependancy for data-jpa
+   - in that class create column as attribute
+   - in resource in appplication.properties config the postgreSQL
+4. create service package
+   - create ProductService class and create obj by @Autowire for this in controller
+   - in this create obj for repo and Autowiried
+   - with this obj call findall() inside the getAllproducts
+5. create repo package
+   - inthis create the productRepo interface which implements the JpaRepository<Product , Integer>    -- jpaRepo is typeed pass the type of model with pk type
+6. Load data and run react then add crossOrigin to api controller
