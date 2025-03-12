@@ -95,7 +95,8 @@
   </div>
 
   ```
-- use @PoastMapping("namee") or @GetMapping("namee") or @RequestMapping("namee", POST) for post form submission
+- use @PoastMapping("namee") or @GetMapping("namee") or @RequestMapping("namee", POST) for post form  submission
+- use @ResponseBogy to retuen the data as api call by return service.getAllJobs();
   ```
   @Controller
   public class JobController {
@@ -106,8 +107,8 @@
   
       @GetMapping({"/", "home"})
       public String home() {
-          return "home";
-      }
+          return "home";                // it is a view name    
+      }                                  // use @ResponseBogy to retuen the data as api call by return service.getAllJobs();
   
   
       @GetMapping("addjob")
@@ -197,3 +198,45 @@
     ```
   - DTO -Data transfer Object ( repo - service - controller )
   - use model in controller to send data to view
+
+# Spring REST API 
+1. start spring io > spring web , lombok , postgreeSQL driver
+2. create hello world to post man from Controller
+   - create HelloCOntroller.java
+   - mention as @RestController
+     - mention @GetMapping("/hello")
+   - create productController.java  ( move this 2 contoller to controller package )
+   - mention as @RestController and @RequestMapping("/api")
+     - mention @GetMapping("/api/products")
+   - chnage the return type fo controller when is need to return the list of rows from db as List<Produc>
+3. Create model package
+   - inside create product class and mention as @Entity @Data @NoArgContructor @AllArgsConstructor
+   - add dependancy for data-jpa
+   - in that class create column as attribute
+   - in resource in appplication.properties config the postgreSQL
+4. create service package
+   - create ProductService class and create obj by @Autowire for this in controller
+   - in this create obj for repo and Autowiried
+   - with this obj call findall() inside the getAllproducts
+5. create repo package
+   - inthis create the productRepo interface which implements the JpaRepository<Product , Integer>    -- jpaRepo is typeed pass the type of model with pk type
+6. Load data and run react then add crossOrigin to api controller
+7. Response Entity
+   - in controller to send the data with status code
+   ```
+	public ResponseEntity<List<product>> getProducts(){
+		return new ResponseEntity<>(productService.getAllProducts. HttpStream.Ok);
+   	}
+   ```
+8. Fetch by id
+9. add product
+    - with image
+      1. send data and image in single json and image as txt file then decode it in server to image
+      2. send the data in json and image seperatly
+
+# Spring Rest ( no controller)
+1. add only spring data JPA and REST Reporitory and postgree and lombok
+2. create model and repo package
+3. config db
+4. no need to create the controller it is managed un repository layer
+5. just open localhost:8080:model_class_name and perform get post put delete
