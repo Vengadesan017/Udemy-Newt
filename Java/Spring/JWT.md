@@ -1,0 +1,25 @@
+JWT - JSON Web Token
+1. Encryption and Decrption
+   - Cryptography
+     - Symmetric key in both side use the same key 
+       - in grp it create sepearete key for each pair 
+     - Asymmetric key in both side use the same key 
+       - in grp it create sepearete key for each pair
+       - Algorithm
+         - AES Advance
+         - DES Data
+         - RSA
+         - ECC
+     - Public vs private key
+       - private key in encryption and Public key in Decryption
+       - public key in encryption and private key in Decryption
+       - can not use same key in both side
+     - Concept
+       - let a , b both had 1 private and public key
+       - let a send data to b and a encrypt the data with b's pubic key
+       - then in b it use its private key to decrypt data
+     - Digital Signature
+       - to avoid the third person malparetiecing the data
+       - here the a encrpt the data with its private key
+       - then in b it decrypt the data with a's public key
+       - so no thierd man na edit the data
