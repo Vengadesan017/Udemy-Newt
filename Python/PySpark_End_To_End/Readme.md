@@ -1,5 +1,5 @@
 # Spark
-- futute of Big Data
+- future of Big Data
 - 100X Faster than Hadoop mapreaduce in memory
 - s/w : java, py, spark, winutile, pycharm
 - test
@@ -40,4 +40,9 @@ print(sys.argv)  -- ['file location.py', argv1, argv2]
      - step out  -- block of loop run at moment
     
 
-   
+## Spark vs MapReduce
+- Spark
+  - HDFS -Read-> MR -write-> HDFS -read-> MR -write-> HDFS
+
+- Map reduce
+  - HDFS -RAM-> Opeartion1 -Ram-> HDFS -Operationn->..  HDFS
