@@ -43,6 +43,19 @@ print(sys.argv)  -- ['file location.py', argv1, argv2]
 ## Spark vs MapReduce
 - Spark
   - HDFS -Read-> MR -write-> HDFS -read-> MR -write-> HDFS
+  - use python java scala r sql
+  - run in on premises
+  - parallel storage and processing
+  - Generality
+    - spark SQL , spark Streaming, Mlib , GraphX on the top of apache spark
 
 - Map reduce
   - HDFS -RAM-> Opeartion1 -Ram-> HDFS -Operationn->..  HDFS
+  - sequence storage and processing
+## Spark companent
+- Apache Spark core on top of Hdoop yarn , kubernates..
+- Spark sql , spark streaming, Mlib, GraphX
+- graphx for graphs and graph parallel computation
+- Mlib for machine leraning
+- spark streaming is interface for streaming data processing on top of dataframes
+- spark sql provide different api and sql interface for processing on top of dataframes
