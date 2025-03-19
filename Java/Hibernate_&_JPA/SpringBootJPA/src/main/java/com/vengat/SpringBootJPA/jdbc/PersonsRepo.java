@@ -7,16 +7,16 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 @Transactional
-public class PersonRepo{
+public class PersonsRepo {
 
     @PersistenceContext
     EntityManager em;
 
-    public Person findById(int id){
-        return em.find(Person.class,1);
+    public Persons findById(int id){
+        return em.find(Persons.class,1);
     }
 
-    public Person create(Person person){
+    public Persons create(Persons person){
         return em.merge(person);
     }
 }

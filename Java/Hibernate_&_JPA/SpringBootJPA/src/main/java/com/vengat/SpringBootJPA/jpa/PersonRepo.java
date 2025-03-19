@@ -14,10 +14,22 @@ public class PersonRepo{
     EntityManager em;
 
     public Person findById(int id){
-        return em.find(Person.class,1);
+        return em.find(Person.class,id);
     }
 
-    public Person create(Person person){
-        return em.merge(person);
+    public Person save(Person person){
+        em.flush();
+        em.detach(person);
+        if (person.getId() == null){
+            em.persist(person);
+        }
+        else{
+             em.merge(person);
+        }
+        return person;
+    }
+
+    public void deleteById(int id) {
+        em.remove(findById(id));
     }
 }

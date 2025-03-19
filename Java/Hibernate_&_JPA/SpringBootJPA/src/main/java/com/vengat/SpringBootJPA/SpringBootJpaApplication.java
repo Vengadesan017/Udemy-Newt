@@ -17,6 +17,9 @@ public class SpringBootJpaApplication implements CommandLineRunner {
 	public PersonRepo repo;
 
 	Person p = new Person("Ramesh");
+	Person p1 = new Person(1,"Rameshhh");
+	Person p2 = new Person("Sureash");
+	Person p3 = new Person("kameash");
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootJpaApplication.class, args);
 	}
@@ -24,8 +27,16 @@ public class SpringBootJpaApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		System.out.println("haii");
-		System.out.println(repo.create(p));
-//		System.out.println(repo.findById(1));
+		System.out.println(repo.save(p));
+		System.out.println(repo.save(p1));
+		System.out.println(repo.save(p2));
+		System.out.println(repo.save(p3));
+		System.out.println(repo.findById(1));
+		System.out.println(repo.findById(2));
+		System.out.println(repo.findById(3));
+		System.out.println(repo.findById(4));
+		repo.deleteById(3);
+
 
 	}
 }
