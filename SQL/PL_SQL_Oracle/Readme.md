@@ -73,3 +73,14 @@ begin
 dbms_output.put_line('Hello');
 end;
 ```
+### commands
+``` 
+lsnrctl status   -- to see poer and hostin cmd
+sqlplus / as sysdba
+ sqlplus username/password@//<hostname>:<port>/<service_name>
+sqlplus admin/password@//192.168.1.100:1521/XE
+
+SELECT USER FROM DUAL;  -- to see user
+SELECT username FROM dba_users;
+
+```
