@@ -84,3 +84,35 @@ SELECT USER FROM DUAL;  -- to see user
 SELECT username FROM dba_users;
 
 ```
+### Key Points:
+- CDB (Container Database): The root database that contains multiple PDBs.
+- PDB (Pluggable Database): A self-contained, portable database that is part of the CDB.
+- Common User: A user that is defined at the CDB level and can be used across all PDBs.
+- Local User: A user that exists only within a specific PDB.
+### In sql developer
+- lishener problemmmmmm
+```sql
+sqlplus system/123456
+
+SHOW PARAMETER container;
+
+CONNECT sys/123456 AS SYSDBA;
+
+ALTER SESSION SET CONTAINER = hr;
+
+show pdbs
+
+
+CREATE PLUGGABLE DATABASE HR
+ADMIN USER HR IDENTIFIED BY 123456
+ROLES = (DBA)
+FILE_NAME_CONVERT = ('D:\TOOLS\ORACLE\ORADATA\XE\PDBSEED\', 'D:\TOOLS\ORACLE\ORADATA\XE\PDBHR\');
+
+ALTER SESSION SET CONTAINER = HR;
+SHOW CON_NAME;
+
+DROP USER C##HR CASCADE;
+CREATE USER C##hr IDENTIFIED BY 123456;
+GRANT CREATE SESSION, CREATE TABLE, CREATE VIEW, CREATE PROCEDURE, CREATE SEQUENCE, CREATE TRIGGER,UNLIMITED TABLESPACE TO hr;
+
+```
