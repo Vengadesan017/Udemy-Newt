@@ -7,7 +7,8 @@
 -  string are immutable but it is override using .replace(,,,)
 -  use enumerate in for loop to get index
   ```py
-            for i,j in enumerate(to_do):
+            to_do = [10, 20, 30]
+            for i,j in enumerate(to_do):   # this same like for i in [(0,10), (1,20), (2,30)]
                 print(i,j,sep=" : ")
 
   ```
