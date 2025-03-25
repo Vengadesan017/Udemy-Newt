@@ -41,3 +41,21 @@
       - push the code
     - deploy this app option in web output
       - gir githup repo details
+- Follow pep standard
+  - 4 space for tap space
+  - wrap the text in line if more the 72 that line (hard wrap)
+  - use space before and after the =
+  - use after space for commo
+  - add documentation
+  - Camel for class name
+  - snake foe function
+- Zen of python (PEP 20)
+- debug in pycharm
+  - make red check mark at left side
+  - start debug
+    - use console and thread and variable to see the value of var
+    - use moments
+      - step over
+      - step into
+      - step into my code
+      - step out
