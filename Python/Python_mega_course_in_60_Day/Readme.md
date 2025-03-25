@@ -49,3 +49,13 @@
   - add documentation
   - Camel for class name
   - snake foe function
+- Zen of python (PEP 20)
+- debug in pycharm
+  - make red check mark at left side
+  - start debug
+    - use console and thread and variable to see the value of var
+    - use moments
+      - step over
+      - step into
+      - step into my code
+      - step out
