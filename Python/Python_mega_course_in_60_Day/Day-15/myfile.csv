@@ -1,0 +1,6 @@
+import glob , t
+
+myfile = glob.glob("*.txt") ,t
+print(myfile),t
+print(glob.glob("*.py"))   # list of files,t
+print(glob.glob("./../Day-14/*.py")),t
