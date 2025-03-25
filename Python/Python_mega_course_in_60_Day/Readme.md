@@ -15,3 +15,29 @@
 - storing the result to txt file
   - open connect to read the write  -- wriye data must be a string
   - use with open
+- in Standard models , learn this 
+  - csv
+  - glob ( unix shell style pathname
+  - webbrowser ( easy to use controller )
+  - shutil  ( high level file operation
+
+- git
+  - user .gitignore file to add the env file and unwanted files to add in git
+  - to revert from the commit
+    - click the git then the commit msg then right click then git checkout or revort
+- Annotation
+  - funtion funtion_name
+  - types TypesName
+- GUI
+  - pip install FreeSimpleGui or install in setting > Project interpreter
+- streamlit
+  - for simple web app in easy steps
+  - streamlit run web.py
+  - deploy
+    - create as standalone
+    - pip freeze > requirements.txt
+    - pip freeze
+    - create new repo in github
+      - push the code
+    - deploy this app option in web output
+      - gir githup repo details
