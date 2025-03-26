@@ -61,3 +61,7 @@
       - step out
 - Pythonanywhere.com
   - to host run py in cloud
+- Jupitor lap for data mangement
+  - pip install jupyter
+  - open folder in terminal
+    - jupyter-lab
