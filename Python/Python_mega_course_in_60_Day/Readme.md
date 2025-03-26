@@ -65,3 +65,18 @@
   - pip install jupyter
   - open folder in terminal
     - jupyter-lab
+    - python3 -m pip install pandas
+    - python3 -m pip install matplotlib
+    ```
+    import os
+    os.getcwd()
+    import pandas as pd
+    df = pd.read_csv("TG_STAID000001.txt", skiprows=20, parse_dates=["    DATE"])
+    df[:20]
+    df.columns
+    df['   TG'].mean()  # container the non data -as -9999
+    df.loc[df['   TG'] != -9999]['   TG'].mean() /10
+    df.loc[df['   TG'] != -9999]['   TG'].max() /10
+    df.loc[df['   TG'] != -9999]['   TG'].hist()
+    ```
+    - select tag press a them m for markdown code
