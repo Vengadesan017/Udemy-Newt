@@ -78,5 +78,9 @@
     df.loc[df['   TG'] != -9999]['   TG'].mean() /10
     df.loc[df['   TG'] != -9999]['   TG'].max() /10
     df.loc[df['   TG'] != -9999]['   TG'].hist()
+
+    -- for RE 
     ```
     - select tag press a them m for markdown code
+- https://openweathermap.org/
+  for wheather forecasting
