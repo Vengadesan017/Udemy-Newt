@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My webpage</title>
+</head>
+<body style="background-color:black;color:white;">
+    <nav>
+        <a href="/about/">About</a>
+        <a href="/contact-us/">Contact Us</a>
+        <a href="/store/">Store</a>
+    </nav>
+    <h1>Welcome</h1>
+    <h2>This is our webpage</h2>
+    <p>Hello, this is our first webpage.</p>
+    <img src="{{ url_for('static', filename='img.png') }}" style="width:500px">
+
+    <br>
+    <br>
+    <h1>Weather data API liks</h1>
+        <a href="/api/v1/station/date">format</a>
+        <a href="/api/v1/station/date">example</a>
+<!--    <a href="https://google.com">Google Page</a>-->
+</body>
+</html>
