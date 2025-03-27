@@ -136,3 +136,15 @@
   - create conntection
   - create cursor with connection
   - execute query using cursor 
+
+- OOPs
+  - when to use
+    - appication become bigger and had futher enhancement
+  - class variable vs instance variable
+  - methods
+    - instance methos func(self)
+    - class method  func(cls) and metion as @classmethod
+      - use claa name or obj name to call
+    - @property like getter in java used to get the processed data like cls_obj.pro_metho_name
+    - @Staticmethod do not had any reference
+    - magic method like a == b is a.__eq__(b)
