@@ -1,0 +1,65 @@
+import requests
+import selectorlib
+import time
+import sqlite3
+
+# INSERT INTO web_scraping VALUES ('Tigers', 'Tiger City', '2088.10.14')
+# SELECT * FROM web_scraping
+
+URL = "http://programmer100.pythonanywhere.com/tours/"
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
+
+
+
+class Scraper:
+    def scrape(self, url):
+        """Scrape the page source from the URL"""
+        response = requests.get(url, headers=HEADERS)
+        source = response.text
+        return source
+
+
+    def extract(self, source):
+        extractor = selectorlib.Extractor.from_yaml_file("extract.yaml")
+        value = extractor.extract(source)["tours"]
+        return value
+
+
+def send_email(message):
+    print("Email was sent with " , message)
+
+class Database:
+    def __init__(self):
+        self.connection = sqlite3.connect("mydb.db")
+    def store(self, extracted):
+        row = extracted.split(",")
+        row = [item.strip() for item in row]
+        cursor = self.connection.cursor()
+        cursor.execute("INSERT INTO web_scraping VALUES(?,?,?)", row)
+        self.connection.commit()
+
+    def read(self, extracted):
+        row = extracted.split(",")
+        row = [item.strip() for item in row]
+        name, city, date = row
+        cursor = self.connection.cursor()
+        cursor.execute("SELECT * FROM web_scraping WHERE Name=? AND City=? AND date=?", (name, city, date))
+        rows = cursor.fetchall()
+        print(rows)
+        return rows
+
+if __name__ == "__main__":
+    while True:
+        spr = Scraper()
+        db = Database()
+        scraped = spr.scrape(URL)
+        extracted = spr.extract(scraped)
+        print(extracted)
+
+        if extracted != "No upcoming tours":
+            row = db.read(extracted)
+            if not row:
+                db.store(extracted)
+                send_email(message="Hey, new event was found!")
+        time.sleep(1)

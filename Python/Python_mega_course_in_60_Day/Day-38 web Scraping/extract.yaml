@@ -1,0 +1,4 @@
+tours:
+  css: '#displaytimer'
+
+#  store the tag which is id = displaytimer ini tours dict..
