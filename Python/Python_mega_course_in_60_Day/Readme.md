@@ -61,6 +61,8 @@
       - step out
 - Pythonanywhere.com
   - to host run py in cloud
+- https://openweathermap.org/
+  for wheather forecasting
 - Jupitor lap for data mangement
   - pip install jupyter
   - open folder in terminal
@@ -79,8 +81,58 @@
     df.loc[df['   TG'] != -9999]['   TG'].max() /10
     df.loc[df['   TG'] != -9999]['   TG'].hist()
 
-    -- for RE 
+    -- for RE * 
+    open a text file and read() as book
+    book.count("Capter")
+    import re
+    pattern = re.compile("Chapter [1-9]+")   # + include 11
+    re.findall(patter, book)
+    
+    --  for love txt
+    pattern = re.compile("[a-zA-Z]* love [a-zA-Z]*")    * include More then one char
+    pattern = re.compile("[a-zA-Z ,:,]* love [a-zA-Z]*")    
+    pattern = re.compile("[^.]* love [a-zA-Z]*")    ^. all except .
+    pattern = re.compile("[A-z]{1}[^.]* love [a-zA-Z]*")    must start with capital at once in startting
+    re.findall(pattern, book)
+
+    -- comman words
+    pattern = re.compile("[a-zA-Z]+")  
+    re.findall(pattern, book)
+    d = {}
+    for words in result:
+      if word in d.key():
+          d[worf] += 1\
+      else:
+          d[word] = 1
+
+    -- NPL
+    --- use import nltk for stopword
+    --- use from nltk.sentiment import SentimentIntensityAnalyzer for positivie and negative chapter
     ```
     - select tag press a them m for markdown code
-- https://openweathermap.org/
-  for wheather forecasting
+- Email web cam object
+  - use cv2 to image as array from opencv-python pip
+  - detecting obj
+    - capture rgb image
+    - convert to
+      - gray
+      - blue
+    - compare
+      - current frame to the first frame
+    - covert to back and white image for rectangle box ( contouring) by Threshold
+    - appending the rectangle array into the frame
+  - send mail
+    - after the obj detection compare the oject entry and exit in list
+    - Create thread to send the mail to avoid the frame waiting
+- web Scraping
+  - automatic method to obtain large amounts of data from websites
+  - from http://programmer100.pythonanywhere.com/tours/
+    - request the html data with url and heder
+    - then extract the data using yaml file
+- sql lite
+  - db browser for sqlite  - download
+  - create db table
+  - import sqlite
+  - create conntection
+  - create cursor with connection
+  - execute query using cursor 
