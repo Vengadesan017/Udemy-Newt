@@ -136,3 +136,7 @@
   - create conntection
   - create cursor with connection
   - execute query using cursor 
+
+- OOPs
+  - when to use
+    - appication become bigger and had futher enhancement
