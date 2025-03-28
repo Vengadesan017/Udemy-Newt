@@ -162,7 +162,7 @@
     - and also for item_list not need to create the variable the django create is for Item model
       - but also need to mention the query set and super() of get content data in view class
         ```py
-
+          -- view  this is django generic view concept not a jinja
           class MenuList(generic.ListView):
               queryset = {}
               # queryset = Item.objects.order_by("-date_created")
@@ -174,4 +174,7 @@
                   context["meals"] = MEAL_TYPE
           
                   return context
+
+            -- template
+                        {% for row in item_list %}
         ```
