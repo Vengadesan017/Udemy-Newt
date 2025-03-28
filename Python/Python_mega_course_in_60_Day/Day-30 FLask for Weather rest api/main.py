@@ -7,15 +7,15 @@ stations = stations[["STAID", "STANAME                                 "]]
 
 @app.route("/")
 def home():
-    return render_template("home.html",data = stations.to_html())
+    return render_template("index.html",data = stations.to_html())
 
 @app.route("/about/")
 def about():
-    return render_template("home.html")
+    return render_template("index.html")
 
 @app.route("/contact-us/")
 def contact_us():
-    return render_template("home.html")
+    return render_template("index.html")
 
 @app.route("/api/v1/<station>/<date>")
 def rest_data(station,date):

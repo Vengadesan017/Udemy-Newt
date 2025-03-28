@@ -4,22 +4,36 @@ from PyQt6.QtWidgets import QApplication, QLabel, QWidget, QGridLayout, \
 import sys
 from datetime import datetime
 import sqlite3
+import mysql.connector
 
 
 class DatabaseConnection:
-    def __init__(self, database_file="mydatabase.db"):
-        self.database_file = database_file
+    def __init__(self, host="localhost", user="root", password="123456", database="PyQt6"):
+        self.host = host
+        self.user = user
+        self.password = password
+        self.database = database
 
     def connect(self):
-        connection = sqlite3.connect(self.database_file)
+        try:
+            connection = mysql.connector.connect(host= self.host,user=self.user,password=self.password,database=self.database)
+            if connection.is_connected():
+                print("Connection successful!")
+                # connection.close()
+            else:
+                print("Failed to connect.")
+
+        except mysql.connector.Error as err:
+            print(f"Error: {err}")
         cursor = connection.cursor()
-        cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+        cursor.execute("SELECT name FROM user_age")
         tables = cursor.fetchall()
+        print(cursor)
         print(tables)
         return connection
 
 
-
+print(DatabaseConnection().connect())
 
 class AgeCalculator(QWidget):
     def __init__(self):
@@ -56,7 +70,7 @@ class AgeCalculator(QWidget):
         grid.addWidget(self.table_widget, 5, 0, 1, 2)
 
         self.setLayout(grid)
-        self.load_data()
+        # self.load_data()
 
     def calculate_age(self):
         current_year = datetime.now().year
@@ -65,7 +79,7 @@ class AgeCalculator(QWidget):
         age = current_year - year_of_birth
         print(age)
         self.output_label.setText(f"{self.name_line_edit.text()} is {age} years old.")
-        self.insert_data(self.name_line_edit.text(),age)
+        # self.insert_data(self.name_line_edit.text(),age)
 
     def load_data(self):
         connection = DatabaseConnection().connect()
@@ -86,7 +100,7 @@ class AgeCalculator(QWidget):
         connection.commit()
         connection.close()
         print(f"Inserted: {name}, {age}")
-        self.load_data()
+        # self.load_data()
 app = QApplication(sys.argv)
 age_calculator = AgeCalculator()
 age_calculator.show()
