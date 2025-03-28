@@ -178,3 +178,9 @@
             -- template
                         {% for row in item_list %}
         ```
+- Recommendation system
+   - type
+     - popular things no user data neeeded
+     - similar things based on your data
+     - ..
+   - use deep notes cloud based like google code lab
