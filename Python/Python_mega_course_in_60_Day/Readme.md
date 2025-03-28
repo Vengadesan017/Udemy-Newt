@@ -159,3 +159,19 @@
 - Django
   - **Jinja** is a web template engine for the Python programming language
     - like {{ }} {% %}
+    - and also for item_list not need to create the variable the django create is for Item model
+      - but also need to mention the query set and super() of get content data in view class
+        ```py
+
+          class MenuList(generic.ListView):
+              queryset = {}
+              # queryset = Item.objects.order_by("-date_created")
+              template_name = "index.html"
+          
+              def get_context_data(self, **kwargs):
+                  # context = {}
+                  context = super().get_context_data(**kwargs)
+                  context["meals"] = MEAL_TYPE
+          
+                  return context
+        ```
