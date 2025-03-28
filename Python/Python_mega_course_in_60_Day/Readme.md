@@ -148,3 +148,12 @@
     - @property like getter in java used to get the processed data like cls_obj.pro_metho_name
     - @Staticmethod do not had any reference
     - magic method like a == b is a.__eq__(b)
+   
+
+- Desktop application using pyQT6
+- Web automation tool with Selenium
+  - download the chrome driver for windows https://googlechromelabs.github.io/chrome-for-testing/
+  - pip install selenium
+  - auto form submission for demoqa.com
+- Flask
+- Django
