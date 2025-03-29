@@ -21,3 +21,41 @@
   - create note book
   - create table : Upload data file
     - check file type , delimiter
+
+# data frame
+- create spark session
+- spark.read.csv()
+- show()
+- printSchema()
+- column
+- describe()
+- select()
+- head(3)
+- withColumn(,)
+- withColumnRenamed(,)
+- createOrReplaceTempView()
+
+# Machine learning process - **MLlib**
+- data acquisition
+- data cleaning   --test data to model testing
+- madel trainning and building
+- model testing   -- loop to model training
+- model deployment
+
+- Types
+  - supervised learning
+    -  both ip and op
+    -  classification , regreesion, prediction, gradient boosting 
+  - Unsupervised learning
+    -  only the IP no historical data
+    -   customer segmentation
+    - algo
+      - self organizing maps
+      - nearest-neighbor mapping
+      - k mean cluster
+     
+# Linear regression
+- graph point make line to minimize the vertical distance between all the points ( determine the best line
+- methods
+  - sum of squares error
+  - sum of absolute error..
