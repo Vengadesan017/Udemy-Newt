@@ -1,0 +1,9 @@
+setup.py
+invoicing_pfd_practice.egg-info/PKG-INFO
+invoicing_pfd_practice.egg-info/SOURCES.txt
+invoicing_pfd_practice.egg-info/dependency_links.txt
+invoicing_pfd_practice.egg-info/requires.txt
+invoicing_pfd_practice.egg-info/top_level.txt
+mypackage/__init__.py
+mypackage/main.py
+mypackage/test.py
