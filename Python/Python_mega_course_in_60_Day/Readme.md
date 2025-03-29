@@ -182,5 +182,21 @@
    - type
      - popular things no user data neeeded
      - similar things based on your data
-     - ..
+     - Collaborative recommendation using ML model
+       - dataset -build-> Trainset -train-> ML Models === Predict
    - use deep notes cloud based like google code lab
+- Own package
+  - pdf creator
+    - make as class functions for callable
+    - remove hard coding
+    - make documentations
+    - create __init__ file
+    - create the folder the for this two
+    - in init file from .main_file name import meyhod name
+    - go to pypi
+      - user user name password
+    - define the setup.py in main folder
+    - python setup.py sdist
+    - pip install twine
+    - twine upload --skip-existing dist/*
+    - enter the username and password  
