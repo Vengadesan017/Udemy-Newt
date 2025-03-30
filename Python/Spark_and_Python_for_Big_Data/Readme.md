@@ -75,7 +75,7 @@
   - mean squared error
   - root mean square error
   - r square error value
-# logistic regression -
+## logistic regression -
 - aims to classify outputs
 - output is 0 or 1, True or False
 - flow
@@ -85,7 +85,7 @@
   - fit
   - prediction
   - evaluate
-# Tree method
+## Tree method
 - multiple levels of decision as yes or no if yes then next decision
 - decision tree
 - random forest
@@ -93,7 +93,7 @@
   - single decision tree
   - random forest
   - gradient boosted tree classifier
-# Decision tree
+## Decision tree
 - supervised machine learning algorithm that is used for both classification and regression tasks
 - root node > internal node > leraf node
 - flow
@@ -103,7 +103,7 @@
   - fit 
   - transform ( prediction)
   - evaluate
-# Random forest
+## Random forest
 -  multiple decision trees and combines their predictions to improve accuracy and reduce overfitting
 - flow
   - create session and load data
@@ -112,7 +112,7 @@
   - fit
   - transform ( prediction)
   - evaluate
-# K Means
+## K Means
 - unsupervised learning
 - used to partition a set of data points into distinct clusters based on similarity
 - k - numbers of cluster > initialize centroid > assign poin to cluster > update centroid > repeat > result
@@ -123,3 +123,13 @@
   - fit
   - transform ( prediction)
   - evaluate ( computeCost)
+## Alternating Least Squares - Recommandation system
+- collaborative filtering
+- decomposing the user-item interaction matrix (e.g., a matrix of ratings given by users to items) into two lower-dimensional matrices representing users and items
+## NLP for sms smap detection
+
+# Streaming
+- datas are from hdfs,s3, tcp socket, kinesis, flume, kafka
+  - so use spark streaming to connect the data source to databases, hdfs, dashboard for for processing like mapreduce, join
+- flow
+  - input data --spark streaming--> batchs of input data --spark engine--> batchs of processed data
