@@ -45,7 +45,11 @@
 - Types
   - supervised learning
     -  both ip and op
-    -  classification , regreesion, prediction, gradient boosting 
+    -  types
+    -  classification ( logistic ,decision tree)
+    - regression ( linear regression ,
+    - prediction
+    -  gradient boosting 
   - Unsupervised learning
     -  only the IP no historical data
     -   customer segmentation
@@ -56,6 +60,8 @@
      
 # Linear regression
 - graph point make line to minimize the vertical distance between all the points ( determine the best line
+- find relationship between the independent and dependent variables
+- output is continuous value, such as price and age.
 - flow
   - load data
   - prepare feaatures by make single feasures vector
@@ -69,3 +75,51 @@
   - mean squared error
   - root mean square error
   - r square error value
+# logistic regression -
+- aims to classify outputs
+- output is 0 or 1, True or False
+- flow
+  - Load Data
+  - prepare data featurss, vector
+  - split rain and test data
+  - fit
+  - prediction
+  - evaluate
+# Tree method
+- multiple levels of decision as yes or no if yes then next decision
+- decision tree
+- random forest
+- types
+  - single decision tree
+  - random forest
+  - gradient boosted tree classifier
+# Decision tree
+- supervised machine learning algorithm that is used for both classification and regression tasks
+- root node > internal node > leraf node
+- flow
+  - create session and load data
+  - assble features into vector
+  - split the data into training and test data
+  - fit 
+  - transform ( prediction)
+  - evaluate
+# Random forest
+-  multiple decision trees and combines their predictions to improve accuracy and reduce overfitting
+- flow
+  - create session and load data
+  - assble features into vector
+  - split the data into training and test data
+  - fit
+  - transform ( prediction)
+  - evaluate
+# K Means
+- unsupervised learning
+- used to partition a set of data points into distinct clusters based on similarity
+- k - numbers of cluster > initialize centroid > assign poin to cluster > update centroid > repeat > result
+- flow
+  - create session and load data
+  - assble features into vector
+  - initialize the k means model
+  - fit
+  - transform ( prediction)
+  - evaluate ( computeCost)
