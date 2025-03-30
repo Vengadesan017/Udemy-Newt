@@ -56,6 +56,16 @@
      
 # Linear regression
 - graph point make line to minimize the vertical distance between all the points ( determine the best line
-- methods
-  - sum of squares error
-  - sum of absolute error..
+- flow
+  - load data
+  - prepare feaatures by make single feasures vector
+  - split train and test data
+  - initialize LR model
+  - train model with train data using fit data
+  - make prediction  on model with test data using transform method
+  - evaluate the model using root mean squareor r squre 
+- eveluation methods
+  - mean absolute error
+  - mean squared error
+  - root mean square error
+  - r square error value
