@@ -58,3 +58,9 @@
 - create class for dbconfig
   - add connect dtring
   - then DriverManager.gerConnection()
+
+- project
+  - new maven project
+    - apache.mavenwebapp2
+  -  add mysql , jakarta servelt , jakarta jps dependency , hibernate orm , hibernate entoty manager
+  -  update the maven project
