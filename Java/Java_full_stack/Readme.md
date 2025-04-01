@@ -188,8 +188,13 @@ list.get(0)
      - lower bound - public static void addNumbers(List<? super Integer> list) {
 - Threads
   - state
-    New: The thread is created but not yet started.
-    Runnable: The thread is ready to run and is waiting for CPU time
-    Blocked: The thread is blocked and waiting for a resource or lock.
-    Waiting: The thread is waiting indefinitely for another thread to perform a particular action.
-    Terminated: The thread has completed execution.
+    - New: The thread is created but not yet started.
+    - Runnable: The thread is ready to run and is waiting for CPU time
+    - Blocked: The thread is blocked and waiting for a resource or lock.
+    - Waiting: The thread is waiting indefinitely for another thread to perform a particular action.
+    - Terminated: The thread has completed execution.
+- Multi thread
+  - Thread creation (via Thread class or Runnable interface)
+  - Synchronization (using synchronized methods or blocks, ReentrantLock)
+  - Executor framework for managing thread pools
+  - Concurrent collections for thread-safe data structures  
