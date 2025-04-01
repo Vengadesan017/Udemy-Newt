@@ -1,0 +1,2 @@
+the new message for written.
+This is another line.
