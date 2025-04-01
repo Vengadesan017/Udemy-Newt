@@ -134,7 +134,7 @@ main(){
 
 - Collections 
   - list - ordered collection (also known as a sequence). Lists can contain duplicate elements
-  - set - does not allow duplicate elements, not order
+  - set - does not allow duplicate elements, not order ( sorted by Natural Order )
   - queue - FIFO order
   - map - key-value pair
   - all types
@@ -186,3 +186,10 @@ list.get(0)
      - unbounded - public static void printList(List<?> list)
      - Upperbound - public static void printNumbers(List<? extends Number> numbers) { (  only number 
      - lower bound - public static void addNumbers(List<? super Integer> list) {
+- Threads
+  - state
+    New: The thread is created but not yet started.
+    Runnable: The thread is ready to run and is waiting for CPU time
+    Blocked: The thread is blocked and waiting for a resource or lock.
+    Waiting: The thread is waiting indefinitely for another thread to perform a particular action.
+    Terminated: The thread has completed execution.
