@@ -138,24 +138,24 @@ main(){
   - queue - FIFO order
   - map - key-value pair
   - all types
-    1. List Types
+  1. List Types
     - ArrayList<E>: A dynamically resizable array with fast random access, slower insertions/removals in the middle.
     - LinkedList<E>: A doubly linked list that’s fast for adding/removing elements at the ends but slower for random access.
     - Vector<E>: A thread-safe, synchronized array list (outdated in favor of ArrayList).
     - Stack<E>: A subclass of Vector that implements LIFO (Last In, First Out) behavior.
-    2. Set Types
+  2. Set Types
     - HashSet<E>: A hash table-based set with no order guarantee, efficient for lookups and insertions.
     - LinkedHashSet<E>: A HashSet that maintains insertion order.
     - TreeSet<E>: A set that maintains elements in sorted order (natural or custom comparator).
     - EnumSet<E>: A specialized set for enum types, highly efficient.
     - CopyOnWriteArraySet<E>: A thread-safe set that creates a new copy on each modification.
-    3. Queue Types
+  3. Queue Types
     - PriorityQueue<E>: A queue that orders elements based on their priority, not FIFO.
     - LinkedList<E>: Implements both Queue and Deque interfaces (FIFO).
     - ArrayDeque<E>: A resizable array implementation of Deque (double-ended queue), more efficient than LinkedList for both ends.
     - DelayQueue<E>: A queue where elements are processed after a certain delay.
     - ConcurrentLinkedQueue<E>: A thread-safe, non-blocking queue for concurrent environments.
-    4. Map Types
+  4. Map Types
     - HashMap<K, V>: A map that uses a hash table for fast lookups but with no ordering guarantee.
     - LinkedHashMap<K, V>: A HashMap that maintains insertion order.
     - TreeMap<K, V>: A map that stores keys in sorted order (natural or custom comparator).
