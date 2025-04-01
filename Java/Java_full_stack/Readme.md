@@ -1,0 +1,227 @@
+# Java full stack
+- java + JSP & servlet + hibernate + spring + RESTful + JS + React
+- go studyeasy.org to get 6 months free in intellji any but one product for 6 months
+
+## Java
+- Composite
+  - use class name as data type of var
+- interface
+  - abstract method
+- types of nexted class
+  - static
+  - non static
+- non static inner class
+  - class a contain the class b
+  - in main class
+  - create obj in A then return the obj to class
+  - call by main_obj.A_obj_return_method().B_methods()
+- static inner class
+  - class a contain the class b as static class
+  - in main class
+  - create obj in A 
+  - call by main_obj.B_class_name.B_methods()
+- Anonymous obj
+  - not save in var directly use
+- Scanner
+  - Scanner scan = new Scanner(System.in)
+  - scan.nextLine() ... next()...
+  - scanner.close()
+- static variable
+  - when var is created as static
+  - then the value is common for all the obj is not vari
+- static
+ - Static members are shared across all instances of the class.
+ - Static methods cannot access non-static variables or methods (i.e., instance variables/methods).
+ - Static blocks are executed only once when the class is loaded into memory
+- final
+ -  Final Variables- Once assigned, the value cannot be changed
+ - Final Methods- Cannot be overridden by subclasses
+ - Final Classes - Cannot be inherited by other classes
+- package
+  - can also use package_name.class_name instyead of class_name obj = new
+- Scope
+  - Local Scope
+  - Instance Scope
+  - Class (Static) Scope
+  - Block Scope (Within loops, if statements,
+- Access Specifiers
+  - public
+    - variable, method, or class is accessible from any other class, both within the same package and outside the package
+  - protected
+    - accessible within the same package and by subclasses (even if they are in different packages)
+  - private
+    - accessible only within the class in which it is declared
+  - default (no modifier)
+    - accessible only within the same package
+- Access Modifiers
+  - Static
+  - Final
+  - Abstract
+- String handling
+  - functions
+    - str_var.length()
+    - .charAt(1)
+    - .substring(2)
+    - .toUpperCase()
+    - .equals(srt2)
+    - .....
+  - literal string and striing obj
+- Exceptions
+ - try block
+   - This is where you place code that might throw an exception.
+ - catch block
+   - This is where you handle the exception if one is thrown.
+ - finally block
+   - This is an optional block that will always execute whether an exception is thrown or not (used for cleanup activities like closing resources).
+ - throw keyword
+   - Used to explicitly throw an exception.
+ - throws keyword
+   - Used to declare exceptions that a method may throw
+ - CHecked Exception
+   - checked at compile-time by the Java compiler
+   - handle by try- catch or throws
+ - un Checked Exceptions
+   - not checked at compile-time by the Java compile
+   - like NullPointerException, ArrayIndexOutOfBoundsException
+  ```java
+      try {
+          
+      } catch (NullPointerException  e1) {
+     
+      } catch (ArithmeticException  e2) {
+         
+      } 
+      } catch (Exception  e2) {
+         
+      } finally {
+          
+            }
+
+
+      if () {
+        throw new OurOwnException("Our Own msg");
+       }
+  ```
+- printf formating
+  - System.out.printf("%5d", 42);  // Outputs: "   42" (padded with 3 spaces)
+  - ystem.out.printf("%.2f", 3.14159);
+- Enum
+  - to set a predefined constants
+```java
+enum Day {
+    SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+}
+main(){
+        for (Day day : Day.values()) {
+            System.out.println(day);
+        }
+}
+
+```
+- Array
+    - int[] numbers = {1, 2, 3, 4, 5};
+    - int[] numbers; number = new int[5];
+  - Mutidimentional array
+    - int[][] matrix = {{1, 2, 3},{4, 5, 6},{7, 8, 9}};
+  - array copy
+    - int[] num_copy =  new int[5]; System.arraycopy(originalArray, 0, copiedArray, 0, originalArray.length
+  - Array of obj
+    -  Student[] students = {new Student("Alice", 20),new Student("Bob", 22),new Student("Ch
+  - call by value
+    - passing the value in function call only if you pass the non iterative obj
+  - call by reference
+    - passing the iterative obj like names
+
+- Collections 
+  - list - ordered collection (also known as a sequence). Lists can contain duplicate elements
+  - set - does not allow duplicate elements, not order ( sorted by Natural Order )
+  - queue - FIFO order
+  - map - key-value pair
+  - all types
+  1. List Types
+    - ArrayList<E>: A dynamically resizable array with fast random access, slower insertions/removals in the middle.
+    - LinkedList<E>: A doubly linked list that’s fast for adding/removing elements at the ends but slower for random access.
+    - Vector<E>: A thread-safe, synchronized array list (outdated in favor of ArrayList).
+    - Stack<E>: A subclass of Vector that implements LIFO (Last In, First Out) behavior.
+  2. Set Types
+    - HashSet<E>: A hash table-based set with no order guarantee, efficient for lookups and insertions.
+    - LinkedHashSet<E>: A HashSet that maintains insertion order.
+    - TreeSet<E>: A set that maintains elements in sorted order (natural or custom comparator).
+    - EnumSet<E>: A specialized set for enum types, highly efficient.
+    - CopyOnWriteArraySet<E>: A thread-safe set that creates a new copy on each modification.
+  3. Queue Types
+    - PriorityQueue<E>: A queue that orders elements based on their priority, not FIFO.
+    - LinkedList<E>: Implements both Queue and Deque interfaces (FIFO).
+    - ArrayDeque<E>: A resizable array implementation of Deque (double-ended queue), more efficient than LinkedList for both ends.
+    - DelayQueue<E>: A queue where elements are processed after a certain delay.
+    - ConcurrentLinkedQueue<E>: A thread-safe, non-blocking queue for concurrent environments.
+  4. Map Types
+    - HashMap<K, V>: A map that uses a hash table for fast lookups but with no ordering guarantee.
+    - LinkedHashMap<K, V>: A HashMap that maintains insertion order.
+    - TreeMap<K, V>: A map that stores keys in sorted order (natural or custom comparator).
+    - Hashtable<K, V>: An outdated, synchronized version of HashMap.
+    - ConcurrentHashMap<K, V>: A thread-safe map that allows concurrent access by multiple threads.
+    - WeakHashMap<K, V>: A map where keys are weakly referenced and can be garbage collected.
+    - IdentityHashMap<K, V>: A map that uses reference equality (==) for comparisons, not object equality (equals()).
+```java
+import java.util.ArrayList;
+ArrayList<String> list = new ArrayList<>();
+list.add("Apple");
+list.add("Banana");
+list.add("Cherry");
+list.get(0)
+```
+- Generics
+  - use case - avoid casting , code reuse , type safe
+  - parameters
+    - T - type
+    - E - Element
+    - K - Key
+    - N - number
+    - V - value
+  1. class - public class generics<T> { private T value;
+  2. methods - public static <T> void printArray(T[] array)
+  3. Interface - public interface Pair<K, V> {K getKey();V getValue();}
+  4. Wildcards - use ? inseat of type
+     - unbounded - public static void printList(List<?> list)
+     - Upperbound - public static void printNumbers(List<? extends Number> numbers) { (  only number 
+     - lower bound - public static void addNumbers(List<? super Integer> list) {
+- Threads
+  - state
+    - New: The thread is created but not yet started.
+    - Runnable: The thread is ready to run and is waiting for CPU time
+    - Blocked: The thread is blocked and waiting for a resource or lock.
+    - Waiting: The thread is waiting indefinitely for another thread to perform a particular action.
+    - Terminated: The thread has completed execution.
+- Multi thread
+  - Thread creation (via Thread class or Runnable interface)
+  - Synchronization (using synchronized methods or blocks, ReentrantLock)
+  - Executor framework for managing thread pools   - Executors.newFixedThreadPool(3);
+  - Concurrent collections for thread-safe data structures
+
+- Lambda expression
+  - (int x, int y) -> x + y
+  - Runnable myRunnable = () -> System.out.println("Hello, World!");   // interface with the single method ( functional interface)
+    - myRunnable.run();
+  - List<String> names = Arrays.asList("John", "Jane", "Alex", "Chris");   // sorting sing labda function
+    - names.sort((s1, s2) -> s1.compareTo(s2));
+  - names.forEach(name -> System.out.println(name));
+ 
+- Predicate
+  - aleternate for lambda functions
+  ```
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
+
+        // Predicate to check if a number is even
+        Predicate<Integer> isEven = (n) -> n % 2 == 0;
+
+        // Use the predicate to filter even numbers from the list
+        List<Integer> evenNumbers = numbers.stream()
+                                           .filter(isEven)
+                                           .collect(Collectors.toList());
+  ```
+- File handling
+  - java.io
+    - Provides simple, traditional file handling.
+  - java.nio
+    - Offers more modern, efficient, and flexible methods for file handling and supports non-blocking I/O operations.
