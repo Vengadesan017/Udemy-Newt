@@ -1,0 +1,44 @@
+# JSP and Servlet
+- download tomcat and eclipse
+- create project 
+  - web > Dynamic web project or maven project > pom.xml
+  - add tomcat from apache
+  - in java in main create the servlet
+- Servelt Container
+  - web app
+    - servlet
+      - load servlet class
+      - create instance of servlet
+      - call the servlets inti() method
+      - when new request
+        - call the servlets SERVICE() method
+        - call the servlets DESTROY() method
+- create html and jsp file web folder
+  - it con open directly in as .html
+- JSP elements
+  - <%= 2*5 %>   --  expression
+  - <% out.println("Hello"); %>    -- scriptlet
+  - <%! public int count = 0; %>    -- declaration var and method also
+  - <%@ page.. %>                   -- directive
+  - <%-- comments --%>
+- Annotation
+  - @WebServlet("/home") in top of class
+- read para meter of url
+  - use request.getParameter("q")
+- load file and class asn jsp
+  - <%@ include file="file.txt" %>
+  - <%@ page import="org.ven.hello" %>
+    - <%= new Hello().demo %>
+  - <jsp:include page="filename"/>
+  - <jsp:forward page="filename"/>
+## Forms
+- add jakarta.servlet-api dependency
+- create forms.jsp file
+  - create form as get or post method
+- create submit.jsp file
+  - show the collect data like <%= request.getParameter("name") %>
+- create Controller call as servlet with extending the HttpServlet
+  - mention <%= request.getContextPath() %>/controller in action in form
+  - in controller class
+    - doGet method
+    - doPost method
