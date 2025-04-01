@@ -53,3 +53,8 @@
 - create the session when the user enter username password correctly
 - read and write cookie
 - logout function for cookie
+- add bootstrap template
+- install mysql server
+- create class for dbconfig
+  - add connect dtring
+  - then DriverManager.gerConnection()
