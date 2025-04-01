@@ -134,9 +134,35 @@ main(){
 
 - Collections 
   - list - ordered collection (also known as a sequence). Lists can contain duplicate elements
-  - set - does not allow duplicate elements
+  - set - does not allow duplicate elements, not order
   - queue - FIFO order
   - map - key-value pair
+  - all types
+    1. List Types
+    - ArrayList<E>: A dynamically resizable array with fast random access, slower insertions/removals in the middle.
+    - LinkedList<E>: A doubly linked list that’s fast for adding/removing elements at the ends but slower for random access.
+    - Vector<E>: A thread-safe, synchronized array list (outdated in favor of ArrayList).
+    - Stack<E>: A subclass of Vector that implements LIFO (Last In, First Out) behavior.
+    2. Set Types
+    - HashSet<E>: A hash table-based set with no order guarantee, efficient for lookups and insertions.
+    - LinkedHashSet<E>: A HashSet that maintains insertion order.
+    - TreeSet<E>: A set that maintains elements in sorted order (natural or custom comparator).
+    - EnumSet<E>: A specialized set for enum types, highly efficient.
+    - CopyOnWriteArraySet<E>: A thread-safe set that creates a new copy on each modification.
+    3. Queue Types
+    - PriorityQueue<E>: A queue that orders elements based on their priority, not FIFO.
+    - LinkedList<E>: Implements both Queue and Deque interfaces (FIFO).
+    - ArrayDeque<E>: A resizable array implementation of Deque (double-ended queue), more efficient than LinkedList for both ends.
+    - DelayQueue<E>: A queue where elements are processed after a certain delay.
+    - ConcurrentLinkedQueue<E>: A thread-safe, non-blocking queue for concurrent environments.
+    4. Map Types
+    - HashMap<K, V>: A map that uses a hash table for fast lookups but with no ordering guarantee.
+    - LinkedHashMap<K, V>: A HashMap that maintains insertion order.
+    - TreeMap<K, V>: A map that stores keys in sorted order (natural or custom comparator).
+    - Hashtable<K, V>: An outdated, synchronized version of HashMap.
+    - ConcurrentHashMap<K, V>: A thread-safe map that allows concurrent access by multiple threads.
+    - WeakHashMap<K, V>: A map where keys are weakly referenced and can be garbage collected.
+    - IdentityHashMap<K, V>: A map that uses reference equality (==) for comparisons, not object equality (equals()).
 ```java
 import java.util.ArrayList;
 ArrayList<String> list = new ArrayList<>();
@@ -145,5 +171,18 @@ list.add("Banana");
 list.add("Cherry");
 list.get(0)
 ```
-
-    
+- Generics
+  - use case - avoid casting , code reuse , type safe
+  - parameters
+    - T - type
+    - E - Element
+    - K - Key
+    - N - number
+    - V - value
+  1. class - public class generics<T> { private T value;
+  2. methods - public static <T> void printArray(T[] array)
+  3. Interface - public interface Pair<K, V> {K getKey();V getValue();}
+  4. Wildcards - use ? inseat of type
+     - unbounded - public static void printList(List<?> list)
+     - Upperbound - public static void printNumbers(List<? extends Number> numbers) { (  only number 
+     - lower bound - public static void addNumbers(List<? super Integer> list) {
