@@ -42,3 +42,14 @@
   - in controller class
     - doGet method
     - doPost method
+## Beans
+- create User.java in source folder
+- in jsp
+  - <jsp:usebean id="user" class="org.student.User"><jsp:useBean>  
+  - <jsp:getProperty property="first_name" name="user"/>
+  - in usebean
+    - add scope="application" or page request to maintain the session at diff way
+## Session management
+- create the session when the user enter username password correctly
+- read and write cookie
+- logout function for cookie
