@@ -196,5 +196,32 @@ list.get(0)
 - Multi thread
   - Thread creation (via Thread class or Runnable interface)
   - Synchronization (using synchronized methods or blocks, ReentrantLock)
-  - Executor framework for managing thread pools
-  - Concurrent collections for thread-safe data structures  
+  - Executor framework for managing thread pools   - Executors.newFixedThreadPool(3);
+  - Concurrent collections for thread-safe data structures
+
+- Lambda expression
+  - (int x, int y) -> x + y
+  - Runnable myRunnable = () -> System.out.println("Hello, World!");   // interface with the single method ( functional interface)
+    - myRunnable.run();
+  - List<String> names = Arrays.asList("John", "Jane", "Alex", "Chris");   // sorting sing labda function
+    - names.sort((s1, s2) -> s1.compareTo(s2));
+  - names.forEach(name -> System.out.println(name));
+ 
+- Predicate
+  - aleternate for lambda functions
+  ```
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
+
+        // Predicate to check if a number is even
+        Predicate<Integer> isEven = (n) -> n % 2 == 0;
+
+        // Use the predicate to filter even numbers from the list
+        List<Integer> evenNumbers = numbers.stream()
+                                           .filter(isEven)
+                                           .collect(Collectors.toList());
+  ```
+- File handling
+  - java.io
+    - Provides simple, traditional file handling.
+  - java.nio
+    - Offers more modern, efficient, and flexible methods for file handling and supports non-blocking I/O operations.
