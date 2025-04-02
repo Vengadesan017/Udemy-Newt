@@ -1,0 +1,22 @@
+# Project
+- vs code setup
+  - add extention
+    - Spring boot extension pack
+    - live server
+    - extention pack for java
+  - dowload extention from browser
+    - vscode java > install coding pack for java
+  - shortcuts
+    - ctrl + shift + p ( palete)
+      - spring initializer : create maven project
+  - in cmd to vs code
+    - code .
+- use start.spriing.io
+  - add dependency
+    - spring boot devtool
+    - lombok
+    - spring web
+    - thymeleak
+    - spring data jpa
+    - h2 db
+- create mvc type file 
