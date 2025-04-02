@@ -19,4 +19,18 @@
     - thymeleak
     - spring data jpa
     - h2 db
-- create mvc type file 
+    - HATEOAS 
+- create mvc type file
+- add static files in resource > statics
+- add html files in resource > templates
+- in controller return the html file
+- config the Application.property
+- open /db-console\
+- adding models
+- adding repo as interface and extends JpaRepository interface
+- adding service
+- adding SeedData.java in config package and extending the commandline Runner
+  - in this args String... for accept any numbers of args
+    - if the sixe of post model is 0 the add the dummy data
+- add Autowired to all inthis flow
+    - 
