@@ -5,6 +5,7 @@
   - add tomcat from apache
   - in java in main create the servlet
 - Servelt Container
+- contrainer : tomcat , jetty - to preocess the request
   - web app
     - servlet
       - load servlet class
@@ -64,3 +65,71 @@
     - apache.mavenwebapp2
   -  add mysql , jakarta servelt , jakarta jps dependency , hibernate orm , hibernate entoty manager
   -  update the maven project
+```
+--   controller
+--  add notation for class
+@WebServlet("/site") and extends extends HttpServlet
+
+
+-- get
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String page = request.getParameter("page").toLowerCase();
+		switch (page) {
+
+		case "listusers":
+			listusers(request, response);
+			break;
+
+		case "adduser":
+			adduser(request, response);
+			break;
+		case "updateuser":
+			updateuser(request, response);
+			break;
+			
+		case "deleteuser":
+			new UsersModel().deleteUser(Integer.parseInt(request.getParameter("user_id")));
+			listusers(request, response);
+			break;
+
+		default:
+			request.setAttribute("title", "Error page");
+			request.getRequestDispatcher("error.jsp").forward(request, response);
+			break;
+		}
+	}
+
+
+-- post
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String form = request.getParameter("form").toLowerCase();
+		switch (form) {
+
+		case "adduseroperation":
+			User user = new User(request.getParameter("username"), request.getParameter("email"));
+			new UsersModel().addUser(user);
+			listusers(request, response);
+			break;
+
+		case "updateuseroperation":
+			User updated_user = new User(Integer.parseInt(request.getParameter("user_id")),
+					request.getParameter("username"), request.getParameter("email"));
+			new UsersModel().updateUser(updated_user);
+			listusers(request, response);
+			break;
+
+		default:
+			request.setAttribute("title", "Error page");
+			request.getRequestDispatcher("error.jsp").forward(request, response);
+			break;
+
+		}
+	}
+
+
+
+```
+
+  
