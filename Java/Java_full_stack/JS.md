@@ -137,6 +137,22 @@ let numbers = [1, 2, 3];
 let doubled = numbers.map(function(num) {
   return num * 2;
 });
+let numbers = [1, 2, 3];
+let doubled = numbers.map(num =>  {
+  return num * 2;
+});
+let numbers = [1, 2, 3];
+let doubled = numbers.map(num => return num * 2);
+
+let numbers = [1, 2, 3];
+let doubled = numbers.map(num =>  {
+  if ( num % 2 == 0) {
+    return num * num;
+  }
+  else  {
+    return num;
+  }
+});
 console.log(doubled);  // Output: [2, 4, 6]
 
 let numbers = [1, 2, 3, 4, 5];
@@ -147,6 +163,12 @@ console.log(evenNumbers);  // Output: [2, 4]
 
 let numbers = [1, 2, 3, 4];
 let sum = numbers.reduce(function(total, num) {
+  return total + num;
+}, 0);
+console.log(sum);  // Output: 10
+
+let numbers = [1, 2, 3, 4];
+let sum = numbers.reduce((total, num) => {
   return total + num;
 }, 0);
 console.log(sum);  // Output: 10
@@ -179,7 +201,75 @@ let [first, second] = colors;
 console.log(first);  // Output: "red"
 console.log(second); // Output: "green"
 
+// sorting
+let numbers = [12, 4, 6, 18 , 0 ];
+numbers.sort()   // it return 0 12 , 18 , 4 , 6
+                  // decause it check the first value
 
+// Correct Sorting (Ascending Order)
+let numbers = [5, 1, 9, 3, 7];
+numbers.sort((a, b) => a - b);
+console.log(numbers);  // Output: [ 1, 3, 5, 7, 9 ]
+
+//  Descending Order
+let numbers = [5, 1, 9, 3, 7];
+numbers.sort((a, b) => b - a);
+console.log(numbers);  // Output: [ 9, 7, 5, 3, 1 ]
+// or
+let numbers = [5, 1, 9, 3, 7];
+numbers.sort((a, b) => a - b).reverse();
+console.log(numbers);  // Output: [ 9, 7, 5, 3, 1 ]
+
+// Sorting Arrays of Objects
+let students = [
+  { name: "John", age: 25 },
+  { name: "Alice", age: 20 },
+  { name: "Bob", age: 30 }
+];
+ 
+students.sort((a, b) => a.age - b.age);
+console.log(students);
+// Output:
+// [
+//   { name: 'Alice', age: 20 },
+//   { name: 'John', age: 25 },
+//   { name: 'Bob', age: 30 }
+// ]
+
+
+let words = ["banana", "Apple", "orange", "Mango"];
+words.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
+console.log(words);  // Output: [ 'Apple', 'banana', 'Mango', 'orange' ]
+
+
+/// mixed data type
+let mixedArray = [10, "Banana", 5, "Apple", 3];
+mixedArray.sort((a, b) => {
+  if (typeof a === "string" && typeof b === "string") {
+    return a.localeCompare(b);
+  } else if (typeof a === "number" && typeof b === "number") {
+    return a - b;
+  }
+  return 0;
+});
+console.log(mixedArray);  // Output: [ 3, 5, 10, 'Apple', 'Banana' ]
+
+
+// Chaining methods to filter even numbers, double them, and sort the result
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let result = numbers
+  .filter(num => num % 2 === 0)  // Filter even numbers
+  .map(num => num * 2)           // Double each even number
+  .sort((a, b) => a - b);         // Sort the resulting array in ascending order
+console.log(result);  // Output: [4, 8, 12, 16, 20]
+
+// inseatd of sort
+  .reduce((sum, num) => sum + num, 0);  // Sum up the numbers
+  .forEach(num => console.log(num));  // Print each number
+  .concat(arr2)       // Concatenate arr1 and arr2
+  .slice(2, 5);       // Slice from index 2 to 4 (exclusive)
+  .filter(num => num > 10)   // Filter numbers greater than 10
+  .find(num => num > 20);     // Find the first number greater than 20
 ```
 ### undefined and null
 ```js
@@ -416,11 +506,539 @@ fruits.forEach(function(fruit, index) {
 // 0: apple
 // 1: banana
 // 2: cherry
+
+-- same
+const x = (name,index) =>  console.log(index + ": " + name);
+fruits.forEach(x)
 ```
-###
+### Normal functionn and Expression function
+```js
+function greet(name) {
+  console.log("Hello, " + name);
+}
+greet("Alice"); // Output: Hello, Alice
 
-###
+// hoisting function
+greet("Bob"); // Output: Hello, Bob
+function greet(name) {
+  console.log("Hello, " + name);
+}
 
-###
 
+-- expression function -- Often used in callbacks or passed as arguments
+const greet = function(name) {
+  console.log("Hello, " + name);
+};
+greet("Bob"); // Output: Hello, Bob
+
+greet("Charlie"); // Error: greet is not a function
+const greet = function(name) {
+  console.log("Hello, " + name);
+};
+
+// passed around
+setTimeout(function() {
+  console.log("This runs after 2 seconds");
+}, 2000);
+
+// arraw function
+const greet = (name) => {
+  console.log("Hello, " + name);
+};
+greet("Charlie"); // Output: Hello, Charlie
+const greet = (name) => "Hello, " + name
+console.log(greet("Charlie")); // Output: Hello, Charlie
+
+
+-- parameters
+function addNumbers(...numbers) {
+  return numbers.reduce((sum, num) => sum + num, 0);
+}
+console.log(addNumbers(1, 2, 3, 4));  // Output: 10
+
+--  only in normal funcvtion
+function printArguments() {
+  for (let i = 0; i < arguments.length; i++) {
+    console.log(arguments[i]);
+  }
+}
+printArguments("apple", "banana", "cherry");
+// Output:
+// apple
+// banana
+// cherry
+
+
+function sum(a=100, b) {
+  return a + b;
+}
+let result = sum(10, 20);  // 10 and 20 are arguments passed to the function.
+console.log(result);  // Output: 30
+
+let result = sum(undefined, 20); // or sum();
+// 120
+
+```
+### object literal
+```js
+let person = {
+  name: "Alice",
+  age: 25,
+  isStudent: false
+};
+console.log(person.name);      // Output: Alice
+console.log(person["age"]);    // Output: 25
+
+
+let car = {
+  brand: "Toyota",
+  model: "Corolla",
+  year: 2020,
+  features: ["Air Conditioning", "Bluetooth", "Backup Camera"],
+  startEngine: function() {
+    console.log(`${brand} Engine started`);
+  }
+};
+car.startEngine();  // Output: Toyota Engine started
+
+-- Shorthand Property Names (ES6)
+let name = "John";
+let age = 30;
+let person = { name, age };  // shorthand for { name: name, age: age }
+console.log(person);  // Output: { name: "John", age: 30 }
+
+-- Computed Property Names (ES6)
+let propName = "age";
+let person = {
+  [propName]: 25
+};
+console.log(person.age);  // Output: 25
+
+
+-- this
+console.log(this);  // In a browser, this logs the window object.
+
+function greet() {
+  console.log(this);
+}
+greet();  // In a browser, this refers to the window object.
+
+let person = {
+  name: "Alice",
+  greet: function() {
+    console.log(this.name);
+  }
+};
+person.greet();  // Output: Alice
+
+
+let person = {
+  name: "Bob",
+  greet: function() {
+    let arrowFunc = () => {
+      console.log(this.name);
+    };
+    arrowFunc();
+  }
+};
+person.greet();  // Output: Bob
+
+
+<button id="myButton">Click me</button>
+
+<script>
+  document.getElementById("myButton").addEventListener("click", function() {
+    console.log(this);  // `this` refers to the button element.
+  });
+</script>
+
+-- Using this with call, apply, and bind
+-- call(): Invokes the function immediately and allows you to pass a specific this value and arguments.
+function greet() {
+  console.log(this.name);
+}
+let person = { name: "Alice" };
+greet.call(person);  // Output: Alice
+
+
+-- apply(): Similar to call(), but takes an array of arguments instead of individual arguments
+function greet(city, country) {
+  console.log(`${this.name} lives in ${city}, ${country}`);
+}
+let person = { name: "Bob" };
+greet.apply(person, ["New York", "USA"]);  // Output: Bob lives in New York, USA
+
+
+-- bind(): Returns a new function where this is permanently bound to the specified value
+function greet() {
+  console.log(this.name);
+}
+let person = { name: "Charlie" };
+let boundGreet = greet.bind(person);
+boundGreet();  // Output: Charlie
+
+-- Class Constructors (ES6)
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+
+  greet() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+}
+
+let person = new Person("Eve");
+person.greet();  // Output: Hello, my name is Eve
+
+```
+### DOM 
+- Document Object Model
+- representation of an HTML document as a tree structure
+- each node represents a part of the page (such as an element, text, or attribute
+- DOM objects are created for every element, attribute, and piece of content within an HTML document
+- tree
+  - document
+    - <html>
+      - <head>
+        - <title>
+          - test: My title
+      - <head>
+        - <h1>
+          - text : "haiii"
+- in Inspect in console
+  - document
+  - document.getElementByClassName("card")
+  - document.createAttri..
+- querySelectors - to select first tag
+  - documents.queryselector('h1')
+  - documents.queryselector('.card') 
+  - documents.queryselector('div.card') 
+  - documents.queryselector('div > .card > p')   // copy element  in inspect
+  - documents.queryselector('#card_id') 
+- nexted querySelector
+  - documents.queryselector('div').queryselector('.card')
+- querySelectorALl - to select all tags and store as nodelist
+  - documents.queryselectorAll('h1')
+    - and result is indexable
+- element by id class tag
+  - result = documents.getElementsByTagName('h1')
+    - result is indexable but not iterable
+  - result = documents.getElementsByClassName('card')
+    - result is indexable but not iterable
+  - result = documents.getElementsById('card')
+    - result is indexable but not iterable
+- modify content
+  - let result = document.getElementByClassName("card")
+  - result.innerText = " new msg"
+  - result.innerHTML = "<h1> new msg</h1>"
+  - result.innerHTML += "<h1> new msg</h1>"
+  - 
 ###
+```js
+// Document Object
+console.log(document.title);  // Output: the title of the current HTML document
+
+//  Element Object
+let element = document.getElementById("myDiv");
+console.log(element.textContent);  // Output: Hello, World!
+-- modify
+element.textContent = "New Content";  // Changes the text inside the div
+element.style.color = "red";  // Changes the text color to red
+
+// node obj
+<p id="myText">This is a paragraph.</p>
+let textNode = document.getElementById("myText").firstChild;
+console.log(textNode.nodeValue);  // Output: This is a paragraph.
+
+
+// Attribute obj
+<img id="myImage" src="image.jpg" alt="A beautiful image">
+let imgElement = document.getElementById("myImage");
+console.log(imgElement.src);  // Access the src attribute of the image
+imgElement.src = "newImage.jpg";  // Change the src attribute to a new image
+
+
+// Event obj
+<button id="myButton">Click me!</button>
+
+<script>
+  let button = document.getElementById("myButton");
+  
+  button.addEventListener("click", function(event) {
+    console.log(event.type);  // Output: click
+    console.log(event.target);  // Output: the button element
+  });
+</script>
+
+
+// Accessing
+let element = document.getElementById("myId");
+let elements = document.getElementsByClassName("myClass");
+let paragraphs = document.getElementsByTagName("p");
+let firstDiv = document.querySelector("div");
+let divs = document.querySelectorAll("div");
+
+
+
+// Modifying DOM Elements:
+let element = document.getElementById("myElement");
+element.textContent = "New Text";  // Changes the text content
+element.innerHTML = "<span>New HTML</span>";  // Changes the inner HTML
+
+let element = document.getElementById("myElement");
+element.style.color = "blue";  // Changes the text color to blue
+element.style.fontSize = "20px";  // Changes the font size
+
+let element = document.getElementById("myElement");
+element.classList.add("newClass");  // Adds a class
+element.classList.remove("oldClass");  // Removes a class
+element.classList.toggle("active");  // Toggles a class
+
+let button = document.getElementById("myButton");
+button.addEventListener("click", function() {
+  alert("Button clicked!");
+});
+
+let newDiv = document.createElement("div");   //  new dom
+newDiv.textContent = "This is a new div!";
+document.body.appendChild(newDiv);  // Adds the new div to the body
+
+
+// DOM Traversal
+let element = document.getElementById("myElement");
+let parent = element.parentNode;  // Get the parent element
+let firstChild = element.firstChild;  // Get the first child node
+
+---
+parentNode: Access the parent of an element
+childNodes: Access the child nodes of an element
+nextSibling: Access the next sibling of an element
+previousSibling: Access the previous sibling of an element
+```
+
+### Async programming
+- by default js is Async programming
+- Asynchronous Concepts in JavaScript
+  - Callback  
+  - Promises
+  - Async / Await
+- Asynchronous Concepts in JavaScript
+  - **Callback**
+    - function containt the another function as para
+    - when callback() is use it call the calller like function in para
+    - callback is a function that is passed as an argument to another function and is executed after the completion of that function
+    - Callbacks were traditionally used for asynchronous tasks
+    - cons
+      - Callback Hell
+      -  multiple nested callbacks make the code difficult to read and maintain
+      -  ` fetchData(function(data) {
+            processData(data, function(result) {
+              saveData(result, function(status) {
+                console.log(status);
+              });
+            });
+          });
+          `
+  - **Promises**
+    - represents the eventual completion (or failure) of an asynchronous operation
+    - some part is synchronius and some are Asynchronous
+    - attach .then() for success and .catch() for errors
+    - status
+      - Pending: The initial state, neither fulfilled nor rejected
+      - Fulfilled: The operation completed successfully
+      - Rejected: The operation failed
+        - async: A function declared with async always returns a promise
+        - await: Used inside async functions to pause the execution until a promise is settled (resolved or rejected)
+    - pros
+      - Chaining Promises:
+      - ` fetchData
+          .then(result => {
+            console.log(result);
+            return "Next step data";  // Passing data to the next then
+          })
+          .then(nextResult => {
+            console.log(nextResult);  // Output: Next step data
+          })
+          .catch(error => console.error(error)); `
+  - **Async / Await**
+    -  cleaner way to work with promises
+    -  make asynchronous code look and behave more like synchronous code
+```js
+-- call back
+// 1
+function fetchData(callback) {
+    console.log(2);
+  setTimeout(() => {
+      console.log(3);
+    let data = "Data fetched!";
+    console.log(4);
+    callback(data);console.log(5);
+  }, 1000); 
+  console.log(6);
+}
+console.log(0);
+fetchData(function(data) {
+ console.log(1);
+  console.log(data); 
+      console.log(7);
+});
+// out put
+0
+2
+6
+3
+4
+1
+Data fetched!
+7
+5
+
+// callback(err,data) err = undefine when error occure, and use if in outer function to show err and data in diff formate
+
+//2
+const displayData = (callback) => {
+
+    let request = new XMLHttpRequest()
+
+    request.open('GET', 'https://jsonplaceholder.typicode.com/todos/11114141111')
+    request.send()
+    request.addEventListener('readystatechange', () => {
+
+        if (request.readyState === 4 && request.status === 200) {
+            callback(undefined, request.responseText);
+        }else if(request.readyState === 4){
+            callback("Error while calling the API", undefined);
+        } 
+    })
+
+}
+
+displayData((err, data) => {
+    if(err){
+        console.log(`An error occurred: ${err}`);
+    }else{
+        console.log(data);
+    }
+   
+});
+
+
+
+// Promise
+// 1
+let fetchData = new Promise((resolve, reject) => {
+  let success = true; // Simulate whether the operation succeeds or fails
+
+  setTimeout(() => {
+    if (success) {
+      resolve("Data fetched successfully!");
+    } else {
+      reject("Failed to fetch data.");
+    }
+  }, 1000);
+});
+
+fetchData
+  .then(result => console.log(result))   // If successful
+  .catch(error => console.error(error)); // If failed
+
+// 2
+const demo = () => {
+    return new Promise((resolve, reject) => {
+        resolve("Hello promise!!");
+        //reject("Hello Reject!!")
+    });
+
+}
+demo().then((data) => {
+    console.log("output 2: "+ data); // Hello promise!!!
+}).catch(err => {
+    console.error('Error:', err);
+});
+
+
+
+
+
+
+// Async/Await
+// 1
+async function processTasks() {
+  try {
+    let data = await fetchData();   // Wait for data
+    console.log(data);
+
+    let processedData = await processData(data); // Wait for processing
+    console.log(processedData);
+    
+    await saveData(processedData);  // Wait for data to be saved
+    console.log("Data saved successfully!");
+  } catch (error) {
+    console.error("Error occurred:", error);
+  }
+}
+processTasks();
+
+
+// 2
+const info = async () => {
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+    const data = await response.json()
+    return data
+}; 
+
+info().then(data =>{ console.log(data)})
+console.log(info());
+
+console.log("Hello world")
+
+
+
+
+
+// api call
+let request = new XMLHttpRequest()
+
+request.open('GET', 'https://jsonplaceholder.typicode.com/todos/1')
+request.send()
+request.addEventListener('readystatechange', () => {
+    
+    if (request.readyState === 4 && request.status === 200) {
+        console.log(request.responseText)
+    }
+})
+
+```
+### Fetch call 
+- use https://jsonplaceholder.typicode.com to pratice the request and response 
+```
+     fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(json => console.log(json))
+```
+- or use XMLHttpRequest
+```
+   var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {          // when the resopse is get this code run 
+        if (this.readyState == 4 && this.status == 200) {
+           // Typical action to be performed when the document is ready:
+           document.getElementById("demo").innerHTML = xhttp.responseText;
+        }
+    };
+    xhttp.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true);
+    xhttp.send();
+
+let request = new XMLHttpRequest()
+
+request.open('GET', 'https://jsonplaceholder.typicode.com/todos/1')
+request.send()
+request.addEventListener('readystatechange', () => {
+    
+    if (request.readyState === 4 && request.status === 200) {
+        console.log(request.responseText)
+    }
+})
+
+```
+- json - JavaScript Object Notation
