@@ -1,0 +1,21 @@
+# ORM tool
+- object relational mapping
+- session factory
+  - it is heavyweight obj so create when application is startup and used later
+- session
+  - lightweith and short live not thread safe and get physical connection with db
+- ORM - CURD operation
+  - create the entity class
+    - mention @Entity(name="user") and @Table(name="user")
+      - mention @Id and @Ccolumn(name="username")
+  - create SessionFactory obj with configure("hibernate.cfg.xml") addAnnotationC;ass(Users.class) buildSessionFactory in Configuration
+  - with that obj begin tranaction then save the data to db then commit the transaction -  create
+  - now perform the curd operation
+    - read - session.get(User.class, 2)
+    - update - get then use setter innthat obj then commit the transaction
+    - delete - session.delete(obj_of_read)
+- HQL (Hibernate Query Language)
+  - use raw query in session
+    - List<User> us = session.createQuery("from Users").getResultlist();
+    - List<User> us = session.createQuery("Update USer ser password = "hello every one" where username - ram").executeUpdate();
+  - use raw query in 

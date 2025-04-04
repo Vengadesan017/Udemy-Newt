@@ -1,0 +1,66 @@
+# Project
+- vs code setup
+  - add extention
+    - Spring boot extension pack
+    - live server
+    - extention pack for java
+  - dowload extention from browser
+    - vscode java > install coding pack for java
+  - shortcuts
+    - ctrl + shift + p ( palete)
+      - spring initializer : create maven project
+  - in cmd to vs code
+    - code .
+- use start.spriing.io
+  - add dependency
+    - spring boot devtool
+    - lombok
+    - spring web
+    - thymeleak
+    - spring data jpa
+    - h2 db
+    - HATEOAS 
+- create mvc type file
+- add static files in resource > statics
+- add html files in resource > templates
+- in controller return the html file
+- config the Application.property
+- open /db-console\
+- adding models
+- adding repo as interface and extends JpaRepository interface
+- adding service
+- adding SeedData.java in config package and extending the commandline Runner
+  - in this args String... for accept any numbers of args
+    - if the sixe of post model is 0 the add the dummy data
+- add Autowired to all in this flow
+- add login and account creation functionality
+  - add dependency
+    - spring-boot-starter-security
+    - thymeleaf-extras-springsecuritys
+  - Add webSecurityCOnfig.java in security package
+    - add whitelist
+      - url for root login register css/** js/** images/** fonts?***
+    - define filter like securityfilterChain
+      - login logout
+      - disable csrf , header
+    - add posswordEncoder
+  - Add AccountService
+    - save account
+    - login by username
+      - use spring user obj for username , password, role ( create grandedAuthority > simplegrantedauthority role
+  - Roles
+    - Admin
+    - User
+    - Editor
+  - Authority
+    - view
+    - write
+    - delete
+    - update
+  - config the role and Authority in roles.java  , privillages.java in utile > constants packages
+    - in roles.java
+      - create enum with user roles(admin,user..) and getter and setter too
+      - add role in security config
+    - in privillages.java
+      - create enum with privillage roles and getter and setter too
+  - Add roles in seed data
