@@ -38,6 +38,7 @@
 - user management
 - album use case
 ### react file structure
+```
 my-react-app/
 ├── node_modules/          # Automatically generated; contains all the installed packages (dependencies)
 ├── public/                # Public files; assets and HTML template
@@ -60,3 +61,5 @@ my-react-app/
 ├── package-lock.json      # Contains exact versions of installed dependencies
 ├── README.md              # Project documentation and instructions
 └── .env                   # Environment variables (optional)
+
+```
