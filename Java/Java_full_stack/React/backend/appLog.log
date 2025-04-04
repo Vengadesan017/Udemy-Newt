@@ -1,0 +1,168 @@
+2024-03-11 02:53:16,193 [WARN] com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h1m56s612ms60µs600ns).
+2024-03-11 20:31:01,205 [WARN] com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17h37m58s485ms700µs100ns).
+2025-04-04 22:23:59,561 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Starting SpringRestdemoApplication using Java 21.0.6 with PID 18000 (C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\React\backend\target\classes started by User in C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\React\backend)
+2025-04-04 22:23:59,562 [DEBUG] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Running with Spring Boot v3.0.1, Spring v6.0.3
+2025-04-04 22:23:59,563 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-04-04 22:24:01,353 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-04 22:24:01,430 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 68 ms. Found 3 JPA repository interfaces.
+2025-04-04 22:24:02,139 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 22:24:02,154 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2025-04-04 22:24:02,155 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.4]
+2025-04-04 22:24:02,249 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2025-04-04 22:24:02,250 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2634 ms
+2025-04-04 22:24:02,366 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2025-04-04 22:24:02,703 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2025-04-04 22:24:02,705 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-04-04 22:24:02,717 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2025-04-04 22:24:02,926 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-04 22:24:02,991 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.1.6.Final
+2025-04-04 22:24:03,159 [WARN] org.hibernate.orm.deprecation [main] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2025-04-04 22:24:03,272 [INFO] SQL dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-04-04 22:24:04,037 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-04 22:24:04,048 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-04 22:24:04,803 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-04 22:24:05,677 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-04 22:24:05,762 [INFO] org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45f32b12, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54dc163a, org.springframework.security.web.context.SecurityContextHolderFilter@18f1631c, org.springframework.security.web.header.HeaderWriterFilter@6a495d88, org.springframework.security.web.authentication.logout.LogoutFilter@76a86677, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@43a9988a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72b4ecb2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6abbdcde, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5bbeb9e3, org.springframework.security.web.session.SessionManagementFilter@38447073, org.springframework.security.web.access.ExceptionTranslationFilter@6bbff652, org.springframework.security.web.access.intercept.AuthorizationFilter@4822fc53]
+2025-04-04 22:24:06,232 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2025-04-04 22:24:06,242 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Started SpringRestdemoApplication in 7.109 seconds (process running for 7.929)
+2025-04-04 22:24:35,080 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-04 22:24:35,081 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-04-04 22:24:35,082 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2025-04-04 22:26:48,821 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-04 22:26:48,822 [INFO] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-04-04 22:26:49,131 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-04-04 22:26:49,164 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-04-04 22:26:54,750 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Starting SpringRestdemoApplication using Java 21.0.6 with PID 2108 (C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\React\backend\target\classes started by User in C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\React\backend)
+2025-04-04 22:26:54,751 [DEBUG] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Running with Spring Boot v3.0.1, Spring v6.0.3
+2025-04-04 22:26:54,752 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-04-04 22:26:55,715 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-04 22:26:55,778 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 56 ms. Found 3 JPA repository interfaces.
+2025-04-04 22:26:56,371 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 22:26:56,382 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2025-04-04 22:26:56,383 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.4]
+2025-04-04 22:26:56,467 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2025-04-04 22:26:56,468 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1674 ms
+2025-04-04 22:26:56,573 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2025-04-04 22:26:56,776 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2025-04-04 22:26:56,778 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-04-04 22:26:56,787 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2025-04-04 22:26:56,938 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-04 22:26:56,989 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.1.6.Final
+2025-04-04 22:26:57,143 [WARN] org.hibernate.orm.deprecation [main] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2025-04-04 22:26:57,239 [INFO] SQL dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-04-04 22:26:57,885 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-04 22:26:57,895 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-04 22:26:58,582 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-04 22:26:59,346 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-04 22:26:59,414 [INFO] org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2dedde74, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22b2d9e3, org.springframework.security.web.context.SecurityContextHolderFilter@510d4d4b, org.springframework.security.web.header.HeaderWriterFilter@3203ffa3, org.springframework.security.web.authentication.logout.LogoutFilter@1c5f6292, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@33aa4326, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73ab649f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b32f0b4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43600de0, org.springframework.security.web.session.SessionManagementFilter@60147536, org.springframework.security.web.access.ExceptionTranslationFilter@7a02d760, org.springframework.security.web.access.intercept.AuthorizationFilter@2b20caed]
+2025-04-04 22:26:59,748 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2025-04-04 22:26:59,758 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Started SpringRestdemoApplication in 5.403 seconds (process running for 5.903)
+2025-04-04 22:27:00,763 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(2)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-04 22:27:00,764 [INFO] org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(2)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2025-04-04 22:27:00,765 [INFO] org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(2)-127.0.0.1] Completed initialization in 1 ms
+2025-04-04 22:28:22,804 [WARN] org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-8] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-04-04 22:29:44,806 [INFO] org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-9] Init duration for springdoc-openapi is: 284 ms
+2025-04-04 22:52:47,830 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Starting SpringRestdemoApplication using Java 21.0.6 with PID 10560 (C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\React\backend\target\classes started by User in C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\React\backend)
+2025-04-04 22:52:47,831 [DEBUG] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Running with Spring Boot v3.0.1, Spring v6.0.3
+2025-04-04 22:52:47,832 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-04-04 22:52:48,939 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-04 22:52:49,029 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 78 ms. Found 3 JPA repository interfaces.
+2025-04-04 22:52:49,596 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 22:52:49,605 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2025-04-04 22:52:49,607 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.4]
+2025-04-04 22:52:49,693 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2025-04-04 22:52:49,694 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1815 ms
+2025-04-04 22:52:49,803 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2025-04-04 22:52:50,033 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2025-04-04 22:52:50,034 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-04-04 22:52:50,043 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2025-04-04 22:52:50,210 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-04 22:52:50,275 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.1.6.Final
+2025-04-04 22:52:50,460 [WARN] org.hibernate.orm.deprecation [main] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2025-04-04 22:52:50,593 [INFO] SQL dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-04-04 22:52:51,310 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-04 22:52:51,321 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-04 22:52:51,979 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-04 22:52:52,737 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-04 22:52:52,808 [INFO] org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@24244ea, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69c7fb94, org.springframework.security.web.context.SecurityContextHolderFilter@1d921267, org.springframework.security.web.header.HeaderWriterFilter@900ffc4, org.springframework.security.web.authentication.logout.LogoutFilter@2dedde74, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@552b7481, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@684a34f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@198a653, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67c61551, org.springframework.security.web.session.SessionManagementFilter@3eb7ff78, org.springframework.security.web.access.ExceptionTranslationFilter@10b36d8a, org.springframework.security.web.access.intercept.AuthorizationFilter@6c89c92e]
+2025-04-04 22:52:53,206 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2025-04-04 22:52:53,215 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Started SpringRestdemoApplication in 5.763 seconds (process running for 6.289)
+2025-04-04 22:52:53,743 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(2)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-04 22:52:53,744 [INFO] org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(2)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2025-04-04 22:52:53,745 [INFO] org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(2)-127.0.0.1] Completed initialization in 1 ms
+2025-04-04 22:58:34,226 [DEBUG] org.studyeasy.SpringRestdemo.controller.AuthController [http-nio-8080-exec-1] TOKEN_GENERATION_ERROR: Bad credentials
+2025-04-04 22:58:50,680 [DEBUG] org.studyeasy.SpringRestdemo.controller.AuthController [http-nio-8080-exec-2] TOKEN_GENERATION_ERROR: Bad credentials
+2025-04-04 22:59:16,310 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Starting SpringRestdemoApplication using Java 21.0.6 with PID 17028 (C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\React\backend\target\classes started by User in C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\React\backend)
+2025-04-04 22:59:16,311 [DEBUG] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Running with Spring Boot v3.0.1, Spring v6.0.3
+2025-04-04 22:59:16,311 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-04-04 22:59:17,371 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-04 22:59:17,436 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
+2025-04-04 22:59:17,961 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2025-04-04 22:59:17,969 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2025-04-04 22:59:17,969 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.4]
+2025-04-04 22:59:18,052 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2025-04-04 22:59:18,053 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1697 ms
+2025-04-04 22:59:18,164 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2025-04-04 22:59:18,379 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2025-04-04 22:59:18,381 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-04-04 22:59:18,390 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2025-04-04 22:59:18,540 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-04 22:59:18,597 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.1.6.Final
+2025-04-04 22:59:18,757 [WARN] org.hibernate.orm.deprecation [main] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2025-04-04 22:59:18,849 [INFO] SQL dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-04-04 22:59:19,543 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-04-04 22:59:19,554 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-04 22:59:20,206 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-04 22:59:20,967 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-04 22:59:21,046 [INFO] org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@24244ea, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69c7fb94, org.springframework.security.web.context.SecurityContextHolderFilter@1d921267, org.springframework.security.web.header.HeaderWriterFilter@900ffc4, org.springframework.security.web.authentication.logout.LogoutFilter@2dedde74, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@552b7481, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@684a34f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@198a653, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67c61551, org.springframework.security.web.session.SessionManagementFilter@3eb7ff78, org.springframework.security.web.access.ExceptionTranslationFilter@10b36d8a, org.springframework.security.web.access.intercept.AuthorizationFilter@6c89c92e]
+2025-04-04 22:59:21,413 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2025-04-04 22:59:21,425 [INFO] org.studyeasy.SpringRestdemo.SpringRestdemoApplication [main] Started SpringRestdemoApplication in 5.51 seconds (process running for 6.041)
+2025-04-04 22:59:22,153 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(2)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-04 22:59:22,153 [INFO] org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(2)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2025-04-04 22:59:22,156 [INFO] org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(2)-127.0.0.1] Completed initialization in 1 ms
+2025-04-04 23:14:42,692 [WARN] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-3] SQL Error: 23505, SQLState: 23505
+2025-04-04 23:14:42,693 [ERROR] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-3] Unique index or primary key violation: "PUBLIC.UK_Q0UJA26QGU1ATULENWUP9RXYR_INDEX_E ON PUBLIC.ACCOUNT(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'vengat@user.com' )"; SQL statement:
+insert into account (authorities, email, password, id) values (?, ?, ?, ?) [23505-214]
+2025-04-04 23:14:42,696 [INFO] org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-3] HHH000010: On release of batch it still contained JDBC statements
+2025-04-04 23:14:42,716 [DEBUG] org.studyeasy.SpringRestdemo.controller.AuthController [http-nio-8080-exec-3] ADD_ACCOUNT_ERROR: could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_Q0UJA26QGU1ATULENWUP9RXYR_INDEX_E ON PUBLIC.ACCOUNT(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'vengat@user.com' )"; SQL statement:
+insert into account (authorities, email, password, id) values (?, ?, ?, ?) [23505-214]]
+2025-04-04 23:14:48,622 [WARN] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] SQL Error: 23505, SQLState: 23505
+2025-04-04 23:14:48,624 [ERROR] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] Unique index or primary key violation: "PUBLIC.UK_Q0UJA26QGU1ATULENWUP9RXYR_INDEX_E ON PUBLIC.ACCOUNT(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'vengat@user.com' )"; SQL statement:
+insert into account (authorities, email, password, id) values (?, ?, ?, ?) [23505-214]
+2025-04-04 23:14:48,626 [INFO] org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-1] HHH000010: On release of batch it still contained JDBC statements
+2025-04-04 23:14:48,634 [DEBUG] org.studyeasy.SpringRestdemo.controller.AuthController [http-nio-8080-exec-1] ADD_ACCOUNT_ERROR: could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_Q0UJA26QGU1ATULENWUP9RXYR_INDEX_E ON PUBLIC.ACCOUNT(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'vengat@user.com' )"; SQL statement:
+insert into account (authorities, email, password, id) values (?, ?, ?, ?) [23505-214]]
+2025-04-04 23:14:53,273 [WARN] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 23505, SQLState: 23505
+2025-04-04 23:14:53,274 [ERROR] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] Unique index or primary key violation: "PUBLIC.UK_Q0UJA26QGU1ATULENWUP9RXYR_INDEX_E ON PUBLIC.ACCOUNT(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'vengat@admin.com' )"; SQL statement:
+insert into account (authorities, email, password, id) values (?, ?, ?, ?) [23505-214]
+2025-04-04 23:14:53,274 [INFO] org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-4] HHH000010: On release of batch it still contained JDBC statements
+2025-04-04 23:14:53,276 [DEBUG] org.studyeasy.SpringRestdemo.controller.AuthController [http-nio-8080-exec-4] ADD_ACCOUNT_ERROR: could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_Q0UJA26QGU1ATULENWUP9RXYR_INDEX_E ON PUBLIC.ACCOUNT(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'vengat@admin.com' )"; SQL statement:
+insert into account (authorities, email, password, id) values (?, ?, ?, ?) [23505-214]]
+2025-04-04 23:14:54,102 [WARN] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-5] SQL Error: 23505, SQLState: 23505
+2025-04-04 23:14:54,145 [ERROR] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-5] Unique index or primary key violation: "PUBLIC.UK_Q0UJA26QGU1ATULENWUP9RXYR_INDEX_E ON PUBLIC.ACCOUNT(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'vengat@admin.com' )"; SQL statement:
+insert into account (authorities, email, password, id) values (?, ?, ?, ?) [23505-214]
+2025-04-04 23:14:54,152 [INFO] org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-5] HHH000010: On release of batch it still contained JDBC statements
+2025-04-04 23:14:54,197 [DEBUG] org.studyeasy.SpringRestdemo.controller.AuthController [http-nio-8080-exec-5] ADD_ACCOUNT_ERROR: could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_Q0UJA26QGU1ATULENWUP9RXYR_INDEX_E ON PUBLIC.ACCOUNT(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'vengat@admin.com' )"; SQL statement:
+insert into account (authorities, email, password, id) values (?, ?, ?, ?) [23505-214]]
+2025-04-04 23:14:54,477 [WARN] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] SQL Error: 23505, SQLState: 23505
+2025-04-04 23:14:54,478 [ERROR] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] Unique index or primary key violation: "PUBLIC.UK_Q0UJA26QGU1ATULENWUP9RXYR_INDEX_E ON PUBLIC.ACCOUNT(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'vengat@admin.com' )"; SQL statement:
+insert into account (authorities, email, password, id) values (?, ?, ?, ?) [23505-214]
+2025-04-04 23:14:54,478 [INFO] org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-6] HHH000010: On release of batch it still contained JDBC statements
+2025-04-04 23:14:54,481 [DEBUG] org.studyeasy.SpringRestdemo.controller.AuthController [http-nio-8080-exec-6] ADD_ACCOUNT_ERROR: could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_Q0UJA26QGU1ATULENWUP9RXYR_INDEX_E ON PUBLIC.ACCOUNT(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'vengat@admin.com' )"; SQL statement:
+insert into account (authorities, email, password, id) values (?, ?, ?, ?) [23505-214]]
+2025-04-04 23:14:54,725 [WARN] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] SQL Error: 23505, SQLState: 23505
+2025-04-04 23:14:54,842 [ERROR] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] Unique index or primary key violation: "PUBLIC.UK_Q0UJA26QGU1ATULENWUP9RXYR_INDEX_E ON PUBLIC.ACCOUNT(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'vengat@admin.com' )"; SQL statement:
+insert into account (authorities, email, password, id) values (?, ?, ?, ?) [23505-214]
+2025-04-04 23:14:54,933 [WARN] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-8] SQL Error: 23505, SQLState: 23505
+2025-04-04 23:14:54,954 [INFO] org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-7] HHH000010: On release of batch it still contained JDBC statements
+2025-04-04 23:14:54,965 [ERROR] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-8] Unique index or primary key violation: "PUBLIC.UK_Q0UJA26QGU1ATULENWUP9RXYR_INDEX_E ON PUBLIC.ACCOUNT(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'vengat@admin.com' )"; SQL statement:
+insert into account (authorities, email, password, id) values (?, ?, ?, ?) [23505-214]
+2025-04-04 23:14:55,040 [DEBUG] org.studyeasy.SpringRestdemo.controller.AuthController [http-nio-8080-exec-7] ADD_ACCOUNT_ERROR: could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_Q0UJA26QGU1ATULENWUP9RXYR_INDEX_E ON PUBLIC.ACCOUNT(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'vengat@admin.com' )"; SQL statement:
+insert into account (authorities, email, password, id) values (?, ?, ?, ?) [23505-214]]
+2025-04-04 23:14:55,042 [INFO] org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-8080-exec-8] HHH000010: On release of batch it still contained JDBC statements
+2025-04-04 23:14:55,049 [DEBUG] org.studyeasy.SpringRestdemo.controller.AuthController [http-nio-8080-exec-8] ADD_ACCOUNT_ERROR: could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_Q0UJA26QGU1ATULENWUP9RXYR_INDEX_E ON PUBLIC.ACCOUNT(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'vengat@admin.com' )"; SQL statement:
+insert into account (authorities, email, password, id) values (?, ?, ?, ?) [23505-214]]
+2025-04-04 23:42:18,413 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-04 23:42:18,415 [INFO] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-04-04 23:42:18,690 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-04-04 23:42:18,767 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
