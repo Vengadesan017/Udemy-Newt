@@ -36,7 +36,9 @@
       - add proxy in package.json
       - congif the controllser
 - user management
-- album use case
+  - react-router-dom
+    - It allows you to display pages and allow users to navigate them. It is a fully-featured client and server-side routing library
+- album management
 ### react file structure
 -  `<App />` -  component rendering or component invocation
 ```
