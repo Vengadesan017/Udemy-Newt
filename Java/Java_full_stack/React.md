@@ -38,7 +38,7 @@
 - user management
 - album use case
 ### react file structure
--  <App /> -  "component rendering" or "component invocation"
+-  `<App />` -  "component rendering" or "component invocation"
 ```
 my-react-app/
 ├── node_modules/          # Automatically generated; contains all the installed packages (dependencies)
