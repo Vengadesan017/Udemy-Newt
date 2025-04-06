@@ -1,0 +1,441 @@
+2025-04-06 21:29:19,123 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-06 21:29:19,123 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-04-06 21:29:19,124 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2025-04-06 21:29:19,153 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][home] Deprecated unwrapped fragment expression "/fragments/head :: head" found in template home, line 4, col 9. Please use the complete syntax of fragment expressions instead ("~{/fragments/head :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:29:19,157 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][home] Deprecated unwrapped fragment expression "/fragments/header :: header" found in template home, line 12, col 13. Please use the complete syntax of fragment expressions instead ("~{/fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:29:19,174 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][home] Deprecated unwrapped fragment expression "/fragments/footer :: footer" found in template home, line 77, col 11. Please use the complete syntax of fragment expressions instead ("~{/fragments/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:29:19,188 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-4] No mapping for GET /resources/static/css/style.css
+2025-04-06 21:29:19,190 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-4] No endpoint GET /resources/static/css/style.css.
+2025-04-06 21:29:19,222 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][home] Deprecated unwrapped fragment expression "/fragments/head :: head" found in template home, line 4, col 9. Please use the complete syntax of fragment expressions instead ("~{/fragments/head :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:29:19,224 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][home] Deprecated unwrapped fragment expression "/fragments/header :: header" found in template home, line 12, col 13. Please use the complete syntax of fragment expressions instead ("~{/fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:29:19,227 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-1] [THYMELEAF][http-nio-8080-exec-1][home] Deprecated unwrapped fragment expression "/fragments/footer :: footer" found in template home, line 77, col 11. Please use the complete syntax of fragment expressions instead ("~{/fragments/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:29:53,459 [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-04-06 21:29:53,460 [INFO] org.springframework.boot.web.embedded.tomcat.GracefulShutdown [Thread-67] Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-06 21:29:53,469 [INFO] org.springframework.boot.web.embedded.tomcat.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-04-06 21:29:53,472 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-67] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-06 21:29:53,475 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-67] HikariPool-17 - Shutdown initiated...
+2025-04-06 21:29:53,503 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-67] HikariPool-17 - Shutdown completed.
+2025-04-06 21:29:53,571 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] Starting FoodBySpringBootApplication using Java 21.0.6 with PID 24284 (C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\SpringBoot\04_FoodBySpringBoot-paging\target\classes started by User in C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\SpringBoot\04_FoodBySpringBoot-paging)
+2025-04-06 21:29:53,571 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-04-06 21:29:53,661 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-06 21:29:53,671 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2025-04-06 21:29:53,724 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-04-06 21:29:53,725 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2025-04-06 21:29:53,726 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-06 21:29:53,747 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-04-06 21:29:53,747 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 175 ms
+2025-04-06 21:29:53,788 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-06 21:29:53,790 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-04-06 21:29:53,794 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-06 21:29:53,795 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-18 - Starting...
+2025-04-06 21:29:53,827 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-18 - Added connection conn165: url=jdbc:h2:file:./db/blogdb user=ADMIN
+2025-04-06 21:29:53,828 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-18 - Start completed.
+2025-04-06 21:29:53,828 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-06 21:29:53,829 [INFO] org.hibernate.orm.connections.pooling [restartedMain] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-18)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-06 21:29:53,877 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-06 21:29:53,880 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-06 21:29:53,953 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-06 21:29:53,959 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [restartedMain] Global AuthenticationManager configured with UserDetailsService bean with name accountService
+2025-04-06 21:29:54,005 [WARN] org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [restartedMain] One of the patterns in [profile] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-04-06 21:29:54,039 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/blogdb'
+2025-04-06 21:29:54,048 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-04-06 21:29:54,053 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path '/'
+2025-04-06 21:29:54,054 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] Started FoodBySpringBootApplication in 0.503 seconds (process running for 1217.442)
+2025-04-06 21:29:54,392 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2025-04-06 21:31:09,967 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-06 21:31:09,968 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-04-06 21:31:09,968 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2025-04-06 21:31:29,776 [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-04-06 21:31:29,780 [INFO] org.springframework.boot.web.embedded.tomcat.GracefulShutdown [Thread-71] Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-06 21:31:29,795 [INFO] org.springframework.boot.web.embedded.tomcat.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-04-06 21:31:29,797 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-71] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-06 21:31:29,798 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-71] HikariPool-18 - Shutdown initiated...
+2025-04-06 21:31:29,830 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-71] HikariPool-18 - Shutdown completed.
+2025-04-06 21:31:29,911 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] Starting FoodBySpringBootApplication using Java 21.0.6 with PID 24284 (C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\SpringBoot\04_FoodBySpringBoot-paging\target\classes started by User in C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\SpringBoot\04_FoodBySpringBoot-paging)
+2025-04-06 21:31:29,912 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-04-06 21:31:30,015 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-06 21:31:30,025 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 8 ms. Found 3 JPA repository interfaces.
+2025-04-06 21:31:30,077 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-04-06 21:31:30,078 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2025-04-06 21:31:30,078 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-06 21:31:30,093 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-04-06 21:31:30,093 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 180 ms
+2025-04-06 21:31:30,127 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-06 21:31:30,129 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-04-06 21:31:30,133 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-06 21:31:30,134 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-19 - Starting...
+2025-04-06 21:31:30,181 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-19 - Added connection conn175: url=jdbc:h2:file:./db/blogdb user=ADMIN
+2025-04-06 21:31:30,182 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-19 - Start completed.
+2025-04-06 21:31:30,183 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-06 21:31:30,183 [INFO] org.hibernate.orm.connections.pooling [restartedMain] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-19)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-06 21:31:30,228 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-06 21:31:30,233 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-06 21:31:30,311 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-06 21:31:30,324 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [restartedMain] Global AuthenticationManager configured with UserDetailsService bean with name accountService
+2025-04-06 21:31:30,374 [WARN] org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [restartedMain] One of the patterns in [profile] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-04-06 21:31:30,411 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/blogdb'
+2025-04-06 21:31:30,419 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-04-06 21:31:30,425 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path '/'
+2025-04-06 21:31:30,426 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] Started FoodBySpringBootApplication in 0.531 seconds (process running for 1313.814)
+2025-04-06 21:31:30,769 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2025-04-06 21:31:33,208 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-06 21:31:33,209 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-04-06 21:31:33,210 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2025-04-06 21:31:33,212 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-1] No mapping for GET /api/v1
+2025-04-06 21:31:33,213 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-1] No endpoint GET /api/v1.
+2025-04-06 21:31:33,888 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-2] No mapping for GET /api/v1
+2025-04-06 21:31:33,890 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-2] No endpoint GET /api/v1.
+2025-04-06 21:31:34,074 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-3] No mapping for GET /api/v1
+2025-04-06 21:31:34,074 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-3] No endpoint GET /api/v1.
+2025-04-06 21:31:34,255 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-6] No mapping for GET /api/v1
+2025-04-06 21:31:34,257 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-6] No endpoint GET /api/v1.
+2025-04-06 21:31:34,421 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-7] No mapping for GET /api/v1
+2025-04-06 21:31:34,421 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-7] No endpoint GET /api/v1.
+2025-04-06 21:31:47,226 [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-04-06 21:31:47,230 [INFO] org.springframework.boot.web.embedded.tomcat.GracefulShutdown [Thread-75] Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-06 21:31:47,246 [INFO] org.springframework.boot.web.embedded.tomcat.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-04-06 21:31:47,254 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-75] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-06 21:31:47,256 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-75] HikariPool-19 - Shutdown initiated...
+2025-04-06 21:31:47,284 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-75] HikariPool-19 - Shutdown completed.
+2025-04-06 21:31:47,372 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] Starting FoodBySpringBootApplication using Java 21.0.6 with PID 24284 (C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\SpringBoot\04_FoodBySpringBoot-paging\target\classes started by User in C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\SpringBoot\04_FoodBySpringBoot-paging)
+2025-04-06 21:31:47,372 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-04-06 21:31:47,509 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-06 21:31:47,520 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+2025-04-06 21:31:47,573 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-04-06 21:31:47,573 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2025-04-06 21:31:47,573 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-06 21:31:47,589 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-04-06 21:31:47,591 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 218 ms
+2025-04-06 21:31:47,652 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-06 21:31:47,653 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-04-06 21:31:47,658 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-06 21:31:47,659 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-20 - Starting...
+2025-04-06 21:31:47,684 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-20 - Added connection conn185: url=jdbc:h2:file:./db/blogdb user=ADMIN
+2025-04-06 21:31:47,684 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-20 - Start completed.
+2025-04-06 21:31:47,684 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-06 21:31:47,685 [INFO] org.hibernate.orm.connections.pooling [restartedMain] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-20)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-06 21:31:47,723 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-06 21:31:47,727 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-06 21:31:47,801 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-06 21:31:47,814 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [restartedMain] Global AuthenticationManager configured with UserDetailsService bean with name accountService
+2025-04-06 21:31:47,860 [WARN] org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [restartedMain] One of the patterns in [profile] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-04-06 21:31:47,896 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/blogdb'
+2025-04-06 21:31:47,903 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-04-06 21:31:47,908 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path '/'
+2025-04-06 21:31:47,910 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] Started FoodBySpringBootApplication in 0.554 seconds (process running for 1331.298)
+2025-04-06 21:31:48,218 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2025-04-06 21:31:50,264 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-06 21:31:50,264 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-04-06 21:31:50,267 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2025-04-06 21:31:50,270 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-1] No mapping for GET /api/v1
+2025-04-06 21:31:50,271 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-1] No endpoint GET /api/v1.
+2025-04-06 21:31:50,824 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-4] No mapping for GET /api/v1
+2025-04-06 21:31:50,826 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-4] No endpoint GET /api/v1.
+2025-04-06 21:31:51,022 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-3] No mapping for GET /api/v1
+2025-04-06 21:31:51,022 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-3] No endpoint GET /api/v1.
+2025-04-06 21:31:51,172 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-6] No mapping for GET /api/v1
+2025-04-06 21:31:51,173 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-6] No endpoint GET /api/v1.
+2025-04-06 21:31:51,337 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-5] No mapping for GET /api/v1
+2025-04-06 21:31:51,337 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-5] No endpoint GET /api/v1.
+2025-04-06 21:31:51,492 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-7] No mapping for GET /api/v1
+2025-04-06 21:31:51,493 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-7] No endpoint GET /api/v1.
+2025-04-06 21:31:51,661 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-2] No mapping for GET /api/v1
+2025-04-06 21:31:51,662 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-2] No endpoint GET /api/v1.
+2025-04-06 21:31:51,800 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-9] No mapping for GET /api/v1
+2025-04-06 21:31:51,801 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-9] No endpoint GET /api/v1.
+2025-04-06 21:31:51,981 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-8] No mapping for GET /api/v1
+2025-04-06 21:31:51,982 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-8] No endpoint GET /api/v1.
+2025-04-06 21:32:00,120 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] Starting FoodBySpringBootApplication using Java 21.0.6 with PID 19108 (C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\SpringBoot\04_FoodBySpringBoot-paging\target\classes started by User in C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\SpringBoot\04_FoodBySpringBoot-paging)
+2025-04-06 21:32:00,122 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-04-06 21:32:00,162 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-06 21:32:00,162 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-06 21:32:00,849 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-06 21:32:00,911 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2025-04-06 21:32:01,580 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-04-06 21:32:01,594 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2025-04-06 21:32:01,595 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-06 21:32:01,643 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-04-06 21:32:01,644 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1481 ms
+2025-04-06 21:32:01,813 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-06 21:32:01,871 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-06 21:32:01,904 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-04-06 21:32:02,145 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-06 21:32:02,177 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-04-06 21:32:02,377 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/blogdb user=ADMIN
+2025-04-06 21:32:02,378 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-04-06 21:32:02,396 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-06 21:32:02,412 [INFO] org.hibernate.orm.connections.pooling [restartedMain] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-06 21:32:03,188 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-06 21:32:03,227 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-06 21:32:03,712 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-06 21:32:03,734 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [restartedMain] Global AuthenticationManager configured with UserDetailsService bean with name accountService
+2025-04-06 21:32:03,989 [WARN] org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [restartedMain] One of the patterns in [profile] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-04-06 21:32:04,216 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/blogdb'
+2025-04-06 21:32:04,294 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-04-06 21:32:04,324 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path '/'
+2025-04-06 21:32:04,333 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] Started FoodBySpringBootApplication in 4.609 seconds (process running for 4.984)
+2025-04-06 21:32:22,213 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-06 21:32:22,214 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-04-06 21:32:22,215 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2025-04-06 21:32:22,241 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-1] No mapping for GET /api/v1
+2025-04-06 21:32:22,249 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-1] No endpoint GET /api/v1.
+2025-04-06 21:32:22,433 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-4] [THYMELEAF][http-nio-8080-exec-4][account_views/login] Deprecated unwrapped fragment expression "/fragments/head :: head" found in template account_views/login, line 4, col 9. Please use the complete syntax of fragment expressions instead ("~{/fragments/head :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:32:22,489 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-4] [THYMELEAF][http-nio-8080-exec-4][account_views/login] Deprecated unwrapped fragment expression "/fragments/header :: header" found in template account_views/login, line 12, col 13. Please use the complete syntax of fragment expressions instead ("~{/fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:32:22,525 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-8] [THYMELEAF][http-nio-8080-exec-8][account_views/login] Deprecated unwrapped fragment expression "/fragments/head :: head" found in template account_views/login, line 4, col 9. Please use the complete syntax of fragment expressions instead ("~{/fragments/head :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:32:22,532 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-8] [THYMELEAF][http-nio-8080-exec-8][account_views/login] Deprecated unwrapped fragment expression "/fragments/header :: header" found in template account_views/login, line 12, col 13. Please use the complete syntax of fragment expressions instead ("~{/fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:32:22,546 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-4] [THYMELEAF][http-nio-8080-exec-4][account_views/login] Deprecated unwrapped fragment expression "/fragments/footer :: footer" found in template account_views/login, line 53, col 11. Please use the complete syntax of fragment expressions instead ("~{/fragments/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:32:22,546 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-8] [THYMELEAF][http-nio-8080-exec-8][account_views/login] Deprecated unwrapped fragment expression "/fragments/footer :: footer" found in template account_views/login, line 53, col 11. Please use the complete syntax of fragment expressions instead ("~{/fragments/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:32:22,594 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-7] [THYMELEAF][http-nio-8080-exec-7][account_views/login] Deprecated unwrapped fragment expression "/fragments/head :: head" found in template account_views/login, line 4, col 9. Please use the complete syntax of fragment expressions instead ("~{/fragments/head :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:32:22,599 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-7] [THYMELEAF][http-nio-8080-exec-7][account_views/login] Deprecated unwrapped fragment expression "/fragments/header :: header" found in template account_views/login, line 12, col 13. Please use the complete syntax of fragment expressions instead ("~{/fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:32:22,604 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-7] [THYMELEAF][http-nio-8080-exec-7][account_views/login] Deprecated unwrapped fragment expression "/fragments/footer :: footer" found in template account_views/login, line 53, col 11. Please use the complete syntax of fragment expressions instead ("~{/fragments/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:32:22,605 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-2] [THYMELEAF][http-nio-8080-exec-2][account_views/login] Deprecated unwrapped fragment expression "/fragments/head :: head" found in template account_views/login, line 4, col 9. Please use the complete syntax of fragment expressions instead ("~{/fragments/head :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:32:22,609 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-2] [THYMELEAF][http-nio-8080-exec-2][account_views/login] Deprecated unwrapped fragment expression "/fragments/header :: header" found in template account_views/login, line 12, col 13. Please use the complete syntax of fragment expressions instead ("~{/fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:32:22,613 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-2] [THYMELEAF][http-nio-8080-exec-2][account_views/login] Deprecated unwrapped fragment expression "/fragments/footer :: footer" found in template account_views/login, line 53, col 11. Please use the complete syntax of fragment expressions instead ("~{/fragments/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:32:42,559 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-4] [THYMELEAF][http-nio-8080-exec-4][home] Deprecated unwrapped fragment expression "/fragments/head :: head" found in template home, line 4, col 9. Please use the complete syntax of fragment expressions instead ("~{/fragments/head :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:32:42,568 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-4] [THYMELEAF][http-nio-8080-exec-4][home] Deprecated unwrapped fragment expression "/fragments/header :: header" found in template home, line 12, col 13. Please use the complete syntax of fragment expressions instead ("~{/fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:32:42,597 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-5] No mapping for GET /resources/static/css/style.css
+2025-04-06 21:32:42,612 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-5] No endpoint GET /resources/static/css/style.css.
+2025-04-06 21:32:42,649 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-4] [THYMELEAF][http-nio-8080-exec-4][home] Deprecated unwrapped fragment expression "/fragments/footer :: footer" found in template home, line 77, col 11. Please use the complete syntax of fragment expressions instead ("~{/fragments/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:32:42,709 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-3] [THYMELEAF][http-nio-8080-exec-3][home] Deprecated unwrapped fragment expression "/fragments/head :: head" found in template home, line 4, col 9. Please use the complete syntax of fragment expressions instead ("~{/fragments/head :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:32:42,715 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-3] [THYMELEAF][http-nio-8080-exec-3][home] Deprecated unwrapped fragment expression "/fragments/header :: header" found in template home, line 12, col 13. Please use the complete syntax of fragment expressions instead ("~{/fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:32:42,731 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-3] [THYMELEAF][http-nio-8080-exec-3][home] Deprecated unwrapped fragment expression "/fragments/footer :: footer" found in template home, line 77, col 11. Please use the complete syntax of fragment expressions instead ("~{/fragments/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:32:50,070 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-1] No mapping for GET /api/v1
+2025-04-06 21:32:50,072 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-1] No endpoint GET /api/v1.
+2025-04-06 21:32:54,374 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-10] No mapping for GET /api/v1
+2025-04-06 21:32:54,378 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-10] No endpoint GET /api/v1.
+2025-04-06 21:32:54,848 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-8] No mapping for GET /api/v1
+2025-04-06 21:32:54,851 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-8] No endpoint GET /api/v1.
+2025-04-06 21:32:55,008 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-9] No mapping for GET /api/v1
+2025-04-06 21:32:55,010 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-9] No endpoint GET /api/v1.
+2025-04-06 21:32:55,157 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-5] No mapping for GET /api/v1
+2025-04-06 21:32:55,162 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-5] No endpoint GET /api/v1.
+2025-04-06 21:32:55,304 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-4] No mapping for GET /api/v1
+2025-04-06 21:32:55,307 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-4] No endpoint GET /api/v1.
+2025-04-06 21:32:55,464 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-7] No mapping for GET /api/v1
+2025-04-06 21:32:55,468 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-7] No endpoint GET /api/v1.
+2025-04-06 21:32:55,624 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-2] No mapping for GET /api/v1
+2025-04-06 21:32:55,629 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-2] No endpoint GET /api/v1.
+2025-04-06 21:32:55,750 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-6] No mapping for GET /api/v1
+2025-04-06 21:32:55,755 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-6] No endpoint GET /api/v1.
+2025-04-06 21:32:55,884 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-3] No mapping for GET /api/v1
+2025-04-06 21:32:55,887 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-3] No endpoint GET /api/v1.
+2025-04-06 21:32:56,023 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-1] No mapping for GET /api/v1
+2025-04-06 21:32:56,025 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-1] No endpoint GET /api/v1.
+2025-04-06 21:33:04,371 [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-04-06 21:33:04,380 [INFO] org.springframework.boot.web.embedded.tomcat.GracefulShutdown [Thread-6] Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-06 21:33:04,397 [INFO] org.springframework.boot.web.embedded.tomcat.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-04-06 21:33:04,401 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-6] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-06 21:33:04,410 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown initiated...
+2025-04-06 21:33:04,427 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown completed.
+2025-04-06 21:33:04,520 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] Starting FoodBySpringBootApplication using Java 21.0.6 with PID 19108 (C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\SpringBoot\04_FoodBySpringBoot-paging\target\classes started by User in C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\SpringBoot\04_FoodBySpringBoot-paging)
+2025-04-06 21:33:04,520 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-04-06 21:33:04,707 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-06 21:33:04,721 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 12 ms. Found 3 JPA repository interfaces.
+2025-04-06 21:33:04,823 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-04-06 21:33:04,824 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2025-04-06 21:33:04,825 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-06 21:33:04,841 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-04-06 21:33:04,841 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 319 ms
+2025-04-06 21:33:04,882 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-06 21:33:04,883 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-04-06 21:33:04,892 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-06 21:33:04,893 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2025-04-06 21:33:04,926 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-2 - Added connection conn10: url=jdbc:h2:file:./db/blogdb user=ADMIN
+2025-04-06 21:33:04,927 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2025-04-06 21:33:04,928 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-06 21:33:04,928 [INFO] org.hibernate.orm.connections.pooling [restartedMain] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-06 21:33:04,996 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-06 21:33:05,003 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-06 21:33:05,090 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-06 21:33:05,094 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [restartedMain] Global AuthenticationManager configured with UserDetailsService bean with name accountService
+2025-04-06 21:33:05,151 [WARN] org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [restartedMain] One of the patterns in [profile] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-04-06 21:33:05,197 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/blogdb'
+2025-04-06 21:33:05,209 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-04-06 21:33:05,217 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path '/'
+2025-04-06 21:33:05,219 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] Started FoodBySpringBootApplication in 0.722 seconds (process running for 65.87)
+2025-04-06 21:33:05,531 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2025-04-06 21:33:07,894 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-06 21:33:07,894 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-04-06 21:33:07,896 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2025-04-06 21:33:07,899 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-1] No mapping for GET /api/v1
+2025-04-06 21:33:07,900 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-1] No endpoint GET /api/v1.
+2025-04-06 21:33:14,987 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] Starting FoodBySpringBootApplication using Java 21.0.6 with PID 7248 (C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\SpringBoot\04_FoodBySpringBoot-paging\target\classes started by User in C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\SpringBoot\04_FoodBySpringBoot-paging)
+2025-04-06 21:33:14,990 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-04-06 21:33:15,034 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-06 21:33:15,034 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-06 21:33:15,730 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-06 21:33:15,789 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 51 ms. Found 3 JPA repository interfaces.
+2025-04-06 21:33:16,446 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-04-06 21:33:16,461 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2025-04-06 21:33:16,462 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-06 21:33:16,502 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-04-06 21:33:16,503 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1468 ms
+2025-04-06 21:33:16,661 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-06 21:33:16,709 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-06 21:33:16,739 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-04-06 21:33:16,973 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-06 21:33:16,996 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-04-06 21:33:17,180 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/blogdb user=ADMIN
+2025-04-06 21:33:17,182 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-04-06 21:33:17,207 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-06 21:33:17,226 [INFO] org.hibernate.orm.connections.pooling [restartedMain] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-06 21:33:18,012 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-06 21:33:18,055 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-06 21:33:18,515 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-06 21:33:18,540 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [restartedMain] Global AuthenticationManager configured with UserDetailsService bean with name accountService
+2025-04-06 21:33:18,831 [WARN] org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [restartedMain] One of the patterns in [profile] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-04-06 21:33:19,066 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/blogdb'
+2025-04-06 21:33:19,141 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-04-06 21:33:19,171 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path '/'
+2025-04-06 21:33:19,178 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] Started FoodBySpringBootApplication in 4.587 seconds (process running for 4.97)
+2025-04-06 21:33:22,509 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-06 21:33:22,510 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-04-06 21:33:22,511 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2025-04-06 21:33:22,538 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-1] No mapping for GET /api/v1
+2025-04-06 21:33:22,546 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-1] No endpoint GET /api/v1.
+2025-04-06 21:33:22,731 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-2] [THYMELEAF][http-nio-8080-exec-2][account_views/login] Deprecated unwrapped fragment expression "/fragments/head :: head" found in template account_views/login, line 4, col 9. Please use the complete syntax of fragment expressions instead ("~{/fragments/head :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:33:22,792 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-2] [THYMELEAF][http-nio-8080-exec-2][account_views/login] Deprecated unwrapped fragment expression "/fragments/header :: header" found in template account_views/login, line 12, col 13. Please use the complete syntax of fragment expressions instead ("~{/fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:33:22,832 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-8] [THYMELEAF][http-nio-8080-exec-8][account_views/login] Deprecated unwrapped fragment expression "/fragments/head :: head" found in template account_views/login, line 4, col 9. Please use the complete syntax of fragment expressions instead ("~{/fragments/head :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:33:22,837 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-8] [THYMELEAF][http-nio-8080-exec-8][account_views/login] Deprecated unwrapped fragment expression "/fragments/header :: header" found in template account_views/login, line 12, col 13. Please use the complete syntax of fragment expressions instead ("~{/fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:33:22,865 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-8] [THYMELEAF][http-nio-8080-exec-8][account_views/login] Deprecated unwrapped fragment expression "/fragments/footer :: footer" found in template account_views/login, line 53, col 11. Please use the complete syntax of fragment expressions instead ("~{/fragments/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:33:22,865 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-2] [THYMELEAF][http-nio-8080-exec-2][account_views/login] Deprecated unwrapped fragment expression "/fragments/footer :: footer" found in template account_views/login, line 53, col 11. Please use the complete syntax of fragment expressions instead ("~{/fragments/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:33:22,906 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-4] [THYMELEAF][http-nio-8080-exec-4][account_views/login] Deprecated unwrapped fragment expression "/fragments/head :: head" found in template account_views/login, line 4, col 9. Please use the complete syntax of fragment expressions instead ("~{/fragments/head :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:33:22,912 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-4] [THYMELEAF][http-nio-8080-exec-4][account_views/login] Deprecated unwrapped fragment expression "/fragments/header :: header" found in template account_views/login, line 12, col 13. Please use the complete syntax of fragment expressions instead ("~{/fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:33:22,918 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-6] [THYMELEAF][http-nio-8080-exec-6][account_views/login] Deprecated unwrapped fragment expression "/fragments/head :: head" found in template account_views/login, line 4, col 9. Please use the complete syntax of fragment expressions instead ("~{/fragments/head :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:33:22,918 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-4] [THYMELEAF][http-nio-8080-exec-4][account_views/login] Deprecated unwrapped fragment expression "/fragments/footer :: footer" found in template account_views/login, line 53, col 11. Please use the complete syntax of fragment expressions instead ("~{/fragments/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:33:22,922 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-6] [THYMELEAF][http-nio-8080-exec-6][account_views/login] Deprecated unwrapped fragment expression "/fragments/header :: header" found in template account_views/login, line 12, col 13. Please use the complete syntax of fragment expressions instead ("~{/fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:33:22,926 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-6] [THYMELEAF][http-nio-8080-exec-6][account_views/login] Deprecated unwrapped fragment expression "/fragments/footer :: footer" found in template account_views/login, line 53, col 11. Please use the complete syntax of fragment expressions instead ("~{/fragments/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:33:32,222 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-8] [THYMELEAF][http-nio-8080-exec-8][home] Deprecated unwrapped fragment expression "/fragments/head :: head" found in template home, line 4, col 9. Please use the complete syntax of fragment expressions instead ("~{/fragments/head :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:33:32,246 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-8] [THYMELEAF][http-nio-8080-exec-8][home] Deprecated unwrapped fragment expression "/fragments/header :: header" found in template home, line 12, col 13. Please use the complete syntax of fragment expressions instead ("~{/fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:33:32,291 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-10] No mapping for GET /resources/static/css/style.css
+2025-04-06 21:33:32,323 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-10] No endpoint GET /resources/static/css/style.css.
+2025-04-06 21:33:32,356 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-8] [THYMELEAF][http-nio-8080-exec-8][home] Deprecated unwrapped fragment expression "/fragments/footer :: footer" found in template home, line 77, col 11. Please use the complete syntax of fragment expressions instead ("~{/fragments/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:33:32,422 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-5] [THYMELEAF][http-nio-8080-exec-5][home] Deprecated unwrapped fragment expression "/fragments/head :: head" found in template home, line 4, col 9. Please use the complete syntax of fragment expressions instead ("~{/fragments/head :: head}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:33:32,431 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-5] [THYMELEAF][http-nio-8080-exec-5][home] Deprecated unwrapped fragment expression "/fragments/header :: header" found in template home, line 12, col 13. Please use the complete syntax of fragment expressions instead ("~{/fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:33:32,445 [WARN] org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor [http-nio-8080-exec-5] [THYMELEAF][http-nio-8080-exec-5][home] Deprecated unwrapped fragment expression "/fragments/footer :: footer" found in template home, line 77, col 11. Please use the complete syntax of fragment expressions instead ("~{/fragments/footer :: footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-04-06 21:33:36,185 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-4] No mapping for GET /api/v1
+2025-04-06 21:33:36,189 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-4] No endpoint GET /api/v1.
+2025-04-06 21:33:37,291 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-9] No mapping for GET /api/v1
+2025-04-06 21:33:37,294 [WARN] org.springframework.web.servlet.PageNotFound [http-nio-8080-exec-9] No endpoint GET /api/v1.
+2025-04-06 21:33:45,805 [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-04-06 21:33:45,811 [INFO] org.springframework.boot.web.embedded.tomcat.GracefulShutdown [Thread-6] Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-06 21:33:45,835 [INFO] org.springframework.boot.web.embedded.tomcat.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-04-06 21:33:45,868 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-6] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-06 21:33:45,914 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown initiated...
+2025-04-06 21:33:45,979 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown completed.
+2025-04-06 21:33:46,256 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] Starting FoodBySpringBootApplication using Java 21.0.6 with PID 7248 (C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\SpringBoot\04_FoodBySpringBoot-paging\target\classes started by User in C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\SpringBoot\04_FoodBySpringBoot-paging)
+2025-04-06 21:33:46,258 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-04-06 21:33:46,957 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-06 21:33:46,998 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
+2025-04-06 21:33:47,404 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-04-06 21:33:47,405 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2025-04-06 21:33:47,406 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-06 21:33:47,492 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-04-06 21:33:47,492 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1223 ms
+2025-04-06 21:33:47,611 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-06 21:33:47,619 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-04-06 21:33:47,656 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-06 21:33:47,659 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2025-04-06 21:33:47,725 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-2 - Added connection conn10: url=jdbc:h2:file:./db/blogdb user=ADMIN
+2025-04-06 21:33:47,725 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2025-04-06 21:33:47,727 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-06 21:33:47,728 [INFO] org.hibernate.orm.connections.pooling [restartedMain] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-06 21:33:47,951 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-06 21:33:47,965 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-06 21:33:48,258 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-06 21:33:48,271 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [restartedMain] Global AuthenticationManager configured with UserDetailsService bean with name accountService
+2025-04-06 21:33:48,423 [WARN] org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [restartedMain] One of the patterns in [profile] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-04-06 21:33:48,585 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/blogdb'
+2025-04-06 21:33:48,623 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-04-06 21:33:48,643 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path '/'
+2025-04-06 21:33:48,656 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] Started FoodBySpringBootApplication in 2.519 seconds (process running for 34.448)
+2025-04-06 21:33:49,538 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2025-04-06 21:33:52,430 [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-04-06 21:33:52,450 [INFO] org.springframework.boot.web.embedded.tomcat.GracefulShutdown [Thread-8] Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-06 21:33:52,468 [INFO] org.springframework.boot.web.embedded.tomcat.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-04-06 21:33:52,474 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-8] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-06 21:33:52,481 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-8] HikariPool-2 - Shutdown initiated...
+2025-04-06 21:33:52,535 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-8] HikariPool-2 - Shutdown completed.
+2025-04-06 21:33:52,686 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] Starting FoodBySpringBootApplication using Java 21.0.6 with PID 7248 (C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\SpringBoot\04_FoodBySpringBoot-paging\target\classes started by User in C:\Users\User\Desktop\Explore\Udemy-Newt\Courses\Java\Java_full_stack\SpringBoot\04_FoodBySpringBoot-paging)
+2025-04-06 21:33:52,686 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-04-06 21:33:53,204 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-06 21:33:53,241 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+2025-04-06 21:33:53,518 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-04-06 21:33:53,526 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2025-04-06 21:33:53,528 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-06 21:33:53,594 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-04-06 21:33:53,595 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 906 ms
+2025-04-06 21:33:53,677 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-06 21:33:53,681 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-04-06 21:33:53,726 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-06 21:33:53,730 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2025-04-06 21:33:53,788 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-3 - Added connection conn20: url=jdbc:h2:file:./db/blogdb user=ADMIN
+2025-04-06 21:33:53,789 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2025-04-06 21:33:53,790 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-06 21:33:53,791 [INFO] org.hibernate.orm.connections.pooling [restartedMain] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-06 21:33:53,967 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-06 21:33:53,983 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-06 21:33:54,233 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-06 21:33:54,259 [INFO] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [restartedMain] Global AuthenticationManager configured with UserDetailsService bean with name accountService
+2025-04-06 21:33:54,446 [WARN] org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [restartedMain] One of the patterns in [profile] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-04-06 21:33:54,555 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/blogdb'
+2025-04-06 21:33:54,585 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-04-06 21:33:54,603 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path '/'
+2025-04-06 21:33:54,608 [INFO] com.vengat.FoodBySpringBoot.FoodBySpringBootApplication [restartedMain] Started FoodBySpringBootApplication in 1.967 seconds (process running for 40.399)
+2025-04-06 21:33:55,303 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
