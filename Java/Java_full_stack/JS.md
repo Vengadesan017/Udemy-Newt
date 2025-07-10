@@ -17,11 +17,11 @@
   - var
     - old way
     - Function scope
-    - can reclare
+    - can re declare
   - let 
     - modern way
     - block scope (like inside loop or if )
-    - can't redeclar in same scope
+    - can't re declare in same scope
   - const
     - for constand storage
 ###  Data type
